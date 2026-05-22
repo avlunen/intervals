@@ -1,0 +1,95 @@
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/intervalsInitView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/intervalsInitView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/intervalsInitView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Graphics,3,14,22]; ]
+import Toybox.Graphics;
+//! Initial view
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/intervalsInitView.mc"; @line = 6; @symbol_classdef = [InitialWatchView,6,6,22]; @symbol_extends<0> = [WatchUi,6,31,38]; @symbol_extends<1> = [View,6,39,43]; ]
+class InitialWatchView extends WatchUi.View {
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/intervalsInitView.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/intervalsInitView.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    //! Constructor
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/intervalsInitView.mc"; @line = 9; @symbol_functiondef = [initialize,9,20,30]; ]
+    public
+    function initialize() as Void {
+_home_avl_data_src_garmin_intervals_intervals_intervalsInitView_mc_9_33_11_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/intervalsInitView.mc" 10 8 ]
+        symbol [ View %tmp.2 10 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 10 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_home_avl_data_src_garmin_intervals_intervals_intervalsInitView_mc_9_33_11_4_stop:
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/intervalsInitView.mc"; @line = 13; @symbol_functiondef = [onLayout,13,20,28]; @symbol_param<0> = [dc,13,29,31]; @symbol_param<0>_type<0> = [Dc,13,35,37]; ]
+    public
+    function onLayout(dc as Dc) as Void {
+_home_avl_data_src_garmin_intervals_intervals_intervalsInitView_mc_13_47_15_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/intervalsInitView.mc" 14 8 ]
+        %tmp.1 = self;
+        symbol [ setLayout %tmp.2 14 8 17 ];
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        symbol [ Rez %tmp.4 14 18 21 ];
+        %tmp.4 = getv ? :Rez;
+        symbol [ Layouts %tmp.5 14 22 29 ];
+        %tmp.5 = getv %tmp.4 :Layouts;
+        symbol [ InitLayout %tmp.6 14 30 40 ];
+        %tmp.6 = getv function %tmp.5 :InitLayout;
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 14 41 43 ];
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        invoke %tmp.1 %tmp.2(%tmp.8);
+_home_avl_data_src_garmin_intervals_intervals_intervalsInitView_mc_13_47_15_4_stop:
+    }
+    //! Update the view
+    //! @param dc Device context
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/intervalsInitView.mc"; @line = 19; @symbol_functiondef = [onUpdate,19,20,28]; @symbol_param<0> = [dc,19,29,31]; @symbol_param<0>_type<0> = [Dc,19,35,37]; ]
+    public
+    function onUpdate(dc as Dc) {
+_home_avl_data_src_garmin_intervals_intervals_intervalsInitView_mc_19_39_25_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/intervalsInitView.mc" 20 8 ]
+        symbol [ View %tmp.2 20 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ onUpdate %tmp.3 20 13 21 ];
+        %tmp.3 = getv function %tmp.2 :onUpdate;
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 20 22 24 ];
+        invoke %tmp.2 %tmp.3(%tmp.4);
+[ "/home/avl/data/src/garmin/intervals/intervals/intervalsInitView.mc" 22 8 ]
+        [ "_home_avl_data_src_garmin_intervals_intervals_intervalsInitView_mc_19_39_25_4_start" "_home_avl_data_src_garmin_intervals_intervals_intervalsInitView_mc_19_39_25_4_stop" ]
+        %prompt.1 = local;
+        symbol [ prompt %prompt.1 22 12 18 ];
+        symbol [ View %tmp.6 22 21 25 ];
+        %tmp.6 = getv ? :View;
+        symbol [ findDrawableById %tmp.7 22 26 42 ];
+        %tmp.7 = getv function %tmp.6 :findDrawableById;
+        %tmp.8 = "prompt";
+        %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
+        %tmp.10 = as %tmp.9 Text;
+        symbol [ Text %tmp.10 22 56 60 ];
+        lputv %prompt.1 %tmp.10;
+        symbol [ prompt %prompt.1 22 12 18 ];
+[ "/home/avl/data/src/garmin/intervals/intervals/intervalsInitView.mc" 24 8 ]
+        %tmp.11 = lgetv %prompt.1;
+        symbol [ prompt %tmp.11 24 8 14 ];
+        symbol [ setText %tmp.12 24 15 22 ];
+        %tmp.12 = getv function %tmp.11 :setText;
+        symbol [ Rez %tmp.14 24 23 26 ];
+        %tmp.14 = getv ? :Rez;
+        symbol [ Strings %tmp.15 24 27 34 ];
+        %tmp.15 = getv %tmp.14 :Strings;
+        symbol [ prompt %tmp.16 24 35 41 ];
+        %tmp.16 = getv %tmp.15 :prompt;
+        invoke %tmp.11 %tmp.12(%tmp.16);
+_home_avl_data_src_garmin_intervals_intervals_intervalsInitView_mc_19_39_25_4_stop:
+    }
+}
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/intervalsInitView.mc"; @line = 1; ]
+<init> {
+}

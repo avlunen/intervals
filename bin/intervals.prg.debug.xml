@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/home/avl/data/src/garmin/intervals/intervals/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc" id="1" lineNum="4" parent="globals/initialIntervalsDelegate" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="2" lineNum="6" parent="globals/MyPauseLengthPickerDelegate" pc="268435479" symbol="&lt;init&gt;"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsApp.mc" id="3" lineNum="26" parent="globals" pc="268435498" symbol="getApp"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsApp.mc" id="3" lineNum="27" parent="globals" pc="268435508" symbol="getApp"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="4" lineNum="10" parent="globals/intervalsView" pc="268435524" symbol="&lt;init&gt;"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="4" lineNum="21" parent="globals/intervalsView" pc="268435542" symbol="&lt;init&gt;"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="4" lineNum="22" parent="globals/intervalsView" pc="268435600" symbol="&lt;init&gt;"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/bin/gen/006-B4005-00/source/Rez.mcgen" id="5" lineNum="7" parent="globals/Rez" pc="268435747" symbol="&lt;init&gt;"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveView.mc" id="6" lineNum="7" parent="globals/SaveIntervalsView" pc="268435771" symbol="&lt;init&gt;"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="7" lineNum="6" parent="globals/MyIntervalLengthPickerDelegate" pc="268435790" symbol="&lt;init&gt;"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsApp.mc" id="8" lineNum="5" parent="globals/intervalsApp" pc="268435809" symbol="&lt;init&gt;"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerView.mc" id="9" lineNum="7" parent="globals/MyNumberPickerView" pc="268435828" symbol="&lt;init&gt;"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc" id="10" lineNum="4" parent="globals/SaveIntervalsDelegate" pc="268435847" symbol="&lt;init&gt;"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerView.mc" id="11" lineNum="7" parent="globals/MyPauseLengthPickerView" pc="268435866" symbol="&lt;init&gt;"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="12" lineNum="6" parent="globals/MyNumberPickerDelegate" pc="268435885" symbol="&lt;init&gt;"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialMenuDelegate.mc" id="13" lineNum="5" parent="globals/intervalsMenuDelegate" pc="268435904" symbol="&lt;init&gt;"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerView.mc" id="14" lineNum="7" parent="globals/MyIntervalLengthPickerView" pc="268435923" symbol="&lt;init&gt;"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsInitView.mc" id="15" lineNum="6" parent="globals/InitialWatchView" pc="268435942" symbol="&lt;init&gt;"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc" id="16" lineNum="19" parent="globals/initialIntervalsDelegate" pc="268435961" symbol="onBack"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc" id="16" lineNum="20" parent="globals/initialIntervalsDelegate" pc="268435963" symbol="onBack"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc" id="16" lineNum="21" parent="globals/initialIntervalsDelegate" pc="268435984" symbol="onBack"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc" id="17" lineNum="24" parent="globals/initialIntervalsDelegate" pc="268435987" symbol="onMenu"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc" id="17" lineNum="25" parent="globals/initialIntervalsDelegate" pc="268435989" symbol="onMenu"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc" id="17" lineNum="26" parent="globals/initialIntervalsDelegate" pc="268436070" symbol="onMenu"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc" id="18" lineNum="6" parent="globals/initialIntervalsDelegate" pc="268436073" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc" id="18" lineNum="7" parent="globals/initialIntervalsDelegate" pc="268436075" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc" id="19" lineNum="12" parent="globals/initialIntervalsDelegate" pc="268436094" symbol="onSelect"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc" id="19" lineNum="13" parent="globals/initialIntervalsDelegate" pc="268436096" symbol="onSelect"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc" id="19" lineNum="14" parent="globals/initialIntervalsDelegate" pc="268436140" symbol="onSelect"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="20" lineNum="10" parent="globals/MyPauseLengthPickerDelegate" pc="268436143" symbol="getValue"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="20" lineNum="11" parent="globals/MyPauseLengthPickerDelegate" pc="268436145" symbol="getValue"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="21" lineNum="38" parent="globals/MyPauseLengthPickerDelegate" pc="268436154" symbol="onPreviousPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="21" lineNum="40" parent="globals/MyPauseLengthPickerDelegate" pc="268436156" symbol="onPreviousPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="21" lineNum="41" parent="globals/MyPauseLengthPickerDelegate" pc="268436173" symbol="onPreviousPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="21" lineNum="44" parent="globals/MyPauseLengthPickerDelegate" pc="268436195" symbol="onPreviousPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="21" lineNum="46" parent="globals/MyPauseLengthPickerDelegate" pc="268436221" symbol="onPreviousPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="21" lineNum="48" parent="globals/MyPauseLengthPickerDelegate" pc="268436237" symbol="onPreviousPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="22" lineNum="14" parent="globals/MyPauseLengthPickerDelegate" pc="268436240" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="22" lineNum="15" parent="globals/MyPauseLengthPickerDelegate" pc="268436242" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="22" lineNum="17" parent="globals/MyPauseLengthPickerDelegate" pc="268436260" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="22" lineNum="19" parent="globals/MyPauseLengthPickerDelegate" pc="268436270" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="23" lineNum="22" parent="globals/MyPauseLengthPickerDelegate" pc="268436296" symbol="onNextPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="23" lineNum="24" parent="globals/MyPauseLengthPickerDelegate" pc="268436298" symbol="onNextPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="23" lineNum="25" parent="globals/MyPauseLengthPickerDelegate" pc="268436315" symbol="onNextPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="23" lineNum="28" parent="globals/MyPauseLengthPickerDelegate" pc="268436337" symbol="onNextPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="23" lineNum="31" parent="globals/MyPauseLengthPickerDelegate" pc="268436350" symbol="onNextPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="23" lineNum="33" parent="globals/MyPauseLengthPickerDelegate" pc="268436376" symbol="onNextPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="23" lineNum="35" parent="globals/MyPauseLengthPickerDelegate" pc="268436392" symbol="onNextPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="24" lineNum="51" parent="globals/MyPauseLengthPickerDelegate" pc="268436395" symbol="onSelect"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="24" lineNum="52" parent="globals/MyPauseLengthPickerDelegate" pc="268436397" symbol="onSelect"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="24" lineNum="54" parent="globals/MyPauseLengthPickerDelegate" pc="268436426" symbol="onSelect"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerDelegate.mc" id="24" lineNum="56" parent="globals/MyPauseLengthPickerDelegate" pc="268436447" symbol="onSelect"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="25" lineNum="72" parent="globals/intervalsView" pc="268436450" symbol="onShow"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="25" lineNum="73" parent="globals/intervalsView" pc="268436452" symbol="onShow"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="25" lineNum="74" parent="globals/intervalsView" pc="268436464" symbol="onShow"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="25" lineNum="75" parent="globals/intervalsView" pc="268436498" symbol="onShow"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="25" lineNum="77" parent="globals/intervalsView" pc="268436539" symbol="onShow"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="25" lineNum="78" parent="globals/intervalsView" pc="268436554" symbol="onShow"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="25" lineNum="82" parent="globals/intervalsView" pc="268436584" symbol="onShow"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="25" lineNum="83" parent="globals/intervalsView" pc="268436596" symbol="onShow"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="25" lineNum="86" parent="globals/intervalsView" pc="268436633" symbol="onShow"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="25" lineNum="87" parent="globals/intervalsView" pc="268436646" symbol="onShow"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="26" lineNum="65" parent="globals/intervalsView" pc="268436668" symbol="onLayout"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="26" lineNum="66" parent="globals/intervalsView" pc="268436670" symbol="onLayout"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="27" lineNum="228" parent="globals/intervalsView" pc="268436712" symbol="onSnsr"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="27" lineNum="229" parent="globals/intervalsView" pc="268436716" symbol="onSnsr"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="27" lineNum="231" parent="globals/intervalsView" pc="268436726" symbol="onSnsr"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="27" lineNum="232" parent="globals/intervalsView" pc="268436733" symbol="onSnsr"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="27" lineNum="235" parent="globals/intervalsView" pc="268436761" symbol="onSnsr"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="27" lineNum="238" parent="globals/intervalsView" pc="268436774" symbol="onSnsr"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="28" lineNum="160" parent="globals/intervalsView" pc="268436791" symbol="onTimer1"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="28" lineNum="161" parent="globals/intervalsView" pc="268436793" symbol="onTimer1"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="28" lineNum="164" parent="globals/intervalsView" pc="268436812" symbol="onTimer1"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="28" lineNum="165" parent="globals/intervalsView" pc="268436829" symbol="onTimer1"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="28" lineNum="166" parent="globals/intervalsView" pc="268436845" symbol="onTimer1"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="28" lineNum="168" parent="globals/intervalsView" pc="268436855" symbol="onTimer1"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="28" lineNum="169" parent="globals/intervalsView" pc="268436873" symbol="onTimer1"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="28" lineNum="172" parent="globals/intervalsView" pc="268436914" symbol="onTimer1"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="28" lineNum="173" parent="globals/intervalsView" pc="268436929" symbol="onTimer1"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="28" lineNum="178" parent="globals/intervalsView" pc="268436959" symbol="onTimer1"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="29" lineNum="182" parent="globals/intervalsView" pc="268436976" symbol="onTimer2"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="29" lineNum="183" parent="globals/intervalsView" pc="268436980" symbol="onTimer2"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="29" lineNum="186" parent="globals/intervalsView" pc="268436999" symbol="onTimer2"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="29" lineNum="187" parent="globals/intervalsView" pc="268437016" symbol="onTimer2"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="29" lineNum="188" parent="globals/intervalsView" pc="268437035" symbol="onTimer2"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="29" lineNum="189" parent="globals/intervalsView" pc="268437051" symbol="onTimer2"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="29" lineNum="191" parent="globals/intervalsView" pc="268437061" symbol="onTimer2"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="29" lineNum="192" parent="globals/intervalsView" pc="268437078" symbol="onTimer2"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="29" lineNum="193" parent="globals/intervalsView" pc="268437091" symbol="onTimer2"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="29" lineNum="196" parent="globals/intervalsView" pc="268437112" symbol="onTimer2"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="29" lineNum="197" parent="globals/intervalsView" pc="268437125" symbol="onTimer2"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="29" lineNum="200" parent="globals/intervalsView" pc="268437146" symbol="onTimer2"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="29" lineNum="201" parent="globals/intervalsView" pc="268437161" symbol="onTimer2"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="29" lineNum="208" parent="globals/intervalsView" pc="268437188" symbol="onTimer2"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="29" lineNum="209" parent="globals/intervalsView" pc="268437220" symbol="onTimer2"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="29" lineNum="210" parent="globals/intervalsView" pc="268437246" symbol="onTimer2"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="29" lineNum="213" parent="globals/intervalsView" pc="268437274" symbol="onTimer2"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="29" lineNum="214" parent="globals/intervalsView" pc="268437292" symbol="onTimer2"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="29" lineNum="217" parent="globals/intervalsView" pc="268437333" symbol="onTimer2"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="29" lineNum="218" parent="globals/intervalsView" pc="268437348" symbol="onTimer2"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="29" lineNum="223" parent="globals/intervalsView" pc="268437378" symbol="onTimer2"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="30" lineNum="28" parent="globals/intervalsView" pc="268437395" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="30" lineNum="29" parent="globals/intervalsView" pc="268437399" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="30" lineNum="31" parent="globals/intervalsView" pc="268437417" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="30" lineNum="32" parent="globals/intervalsView" pc="268437452" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="30" lineNum="34" parent="globals/intervalsView" pc="268437484" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="30" lineNum="35" parent="globals/intervalsView" pc="268437499" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="30" lineNum="40" parent="globals/intervalsView" pc="268437570" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="30" lineNum="41" parent="globals/intervalsView" pc="268437592" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="30" lineNum="42" parent="globals/intervalsView" pc="268437614" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="30" lineNum="44" parent="globals/intervalsView" pc="268437636" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="30" lineNum="45" parent="globals/intervalsView" pc="268437643" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="30" lineNum="48" parent="globals/intervalsView" pc="268437665" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="30" lineNum="49" parent="globals/intervalsView" pc="268437672" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="30" lineNum="52" parent="globals/intervalsView" pc="268437694" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="30" lineNum="53" parent="globals/intervalsView" pc="268437701" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="30" lineNum="56" parent="globals/intervalsView" pc="268437723" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="30" lineNum="59" parent="globals/intervalsView" pc="268437736" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="30" lineNum="60" parent="globals/intervalsView" pc="268437752" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="30" lineNum="61" parent="globals/intervalsView" pc="268437768" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="31" lineNum="138" parent="globals/intervalsView" pc="268437785" symbol="onHide"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="31" lineNum="139" parent="globals/intervalsView" pc="268437787" symbol="onHide"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="31" lineNum="140" parent="globals/intervalsView" pc="268437800" symbol="onHide"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="31" lineNum="141" parent="globals/intervalsView" pc="268437818" symbol="onHide"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="31" lineNum="143" parent="globals/intervalsView" pc="268437830" symbol="onHide"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="31" lineNum="144" parent="globals/intervalsView" pc="268437843" symbol="onHide"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="31" lineNum="145" parent="globals/intervalsView" pc="268437861" symbol="onHide"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="31" lineNum="148" parent="globals/intervalsView" pc="268437873" symbol="onHide"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="31" lineNum="149" parent="globals/intervalsView" pc="268437886" symbol="onHide"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="31" lineNum="152" parent="globals/intervalsView" pc="268437907" symbol="onHide"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="31" lineNum="154" parent="globals/intervalsView" pc="268437917" symbol="onHide"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="31" lineNum="155" parent="globals/intervalsView" pc="268437933" symbol="onHide"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="31" lineNum="156" parent="globals/intervalsView" pc="268437949" symbol="onHide"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="32" lineNum="92" parent="globals/intervalsView" pc="268437966" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="32" lineNum="93" parent="globals/intervalsView" pc="268437970" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="32" lineNum="94" parent="globals/intervalsView" pc="268437994" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="32" lineNum="95" parent="globals/intervalsView" pc="268438018" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="32" lineNum="96" parent="globals/intervalsView" pc="268438042" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="32" lineNum="100" parent="globals/intervalsView" pc="268438066" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="32" lineNum="103" parent="globals/intervalsView" pc="268438086" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="32" lineNum="104" parent="globals/intervalsView" pc="268438100" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="32" lineNum="105" parent="globals/intervalsView" pc="268438210" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="32" lineNum="108" parent="globals/intervalsView" pc="268438249" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="32" lineNum="109" parent="globals/intervalsView" pc="268438359" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="32" lineNum="113" parent="globals/intervalsView" pc="268438395" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="32" lineNum="116" parent="globals/intervalsView" pc="268438415" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="32" lineNum="117" parent="globals/intervalsView" pc="268438435" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="32" lineNum="120" parent="globals/intervalsView" pc="268438467" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="32" lineNum="124" parent="globals/intervalsView" pc="268438496" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="32" lineNum="125" parent="globals/intervalsView" pc="268438518" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="32" lineNum="127" parent="globals/intervalsView" pc="268438535" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="32" lineNum="128" parent="globals/intervalsView" pc="268438569" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="32" lineNum="130" parent="globals/intervalsView" pc="268438659" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" id="32" lineNum="131" parent="globals/intervalsView" pc="268438693" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveView.mc" id="33" lineNum="21" parent="globals/SaveIntervalsView" pc="268438784" symbol="onLayout"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveView.mc" id="33" lineNum="22" parent="globals/SaveIntervalsView" pc="268438786" symbol="onLayout"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveView.mc" id="34" lineNum="11" parent="globals/SaveIntervalsView" pc="268438828" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveView.mc" id="34" lineNum="12" parent="globals/SaveIntervalsView" pc="268438830" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveView.mc" id="34" lineNum="14" parent="globals/SaveIntervalsView" pc="268438848" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveView.mc" id="35" lineNum="17" parent="globals/SaveIntervalsView" pc="268438859" symbol="getSession"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveView.mc" id="35" lineNum="18" parent="globals/SaveIntervalsView" pc="268438861" symbol="getSession"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveView.mc" id="36" lineNum="27" parent="globals/SaveIntervalsView" pc="268438870" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveView.mc" id="36" lineNum="28" parent="globals/SaveIntervalsView" pc="268438874" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveView.mc" id="36" lineNum="30" parent="globals/SaveIntervalsView" pc="268438894" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveView.mc" id="36" lineNum="32" parent="globals/SaveIntervalsView" pc="268438918" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="37" lineNum="10" parent="globals/MyIntervalLengthPickerDelegate" pc="268438955" symbol="getValue"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="37" lineNum="11" parent="globals/MyIntervalLengthPickerDelegate" pc="268438957" symbol="getValue"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="38" lineNum="38" parent="globals/MyIntervalLengthPickerDelegate" pc="268438966" symbol="onPreviousPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="38" lineNum="40" parent="globals/MyIntervalLengthPickerDelegate" pc="268438968" symbol="onPreviousPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="38" lineNum="41" parent="globals/MyIntervalLengthPickerDelegate" pc="268438985" symbol="onPreviousPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="38" lineNum="44" parent="globals/MyIntervalLengthPickerDelegate" pc="268439007" symbol="onPreviousPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="38" lineNum="46" parent="globals/MyIntervalLengthPickerDelegate" pc="268439033" symbol="onPreviousPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="38" lineNum="48" parent="globals/MyIntervalLengthPickerDelegate" pc="268439049" symbol="onPreviousPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="39" lineNum="14" parent="globals/MyIntervalLengthPickerDelegate" pc="268439052" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="39" lineNum="15" parent="globals/MyIntervalLengthPickerDelegate" pc="268439054" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="39" lineNum="17" parent="globals/MyIntervalLengthPickerDelegate" pc="268439072" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="39" lineNum="19" parent="globals/MyIntervalLengthPickerDelegate" pc="268439082" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="40" lineNum="22" parent="globals/MyIntervalLengthPickerDelegate" pc="268439108" symbol="onNextPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="40" lineNum="24" parent="globals/MyIntervalLengthPickerDelegate" pc="268439110" symbol="onNextPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="40" lineNum="25" parent="globals/MyIntervalLengthPickerDelegate" pc="268439127" symbol="onNextPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="40" lineNum="28" parent="globals/MyIntervalLengthPickerDelegate" pc="268439149" symbol="onNextPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="40" lineNum="31" parent="globals/MyIntervalLengthPickerDelegate" pc="268439162" symbol="onNextPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="40" lineNum="33" parent="globals/MyIntervalLengthPickerDelegate" pc="268439188" symbol="onNextPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="40" lineNum="35" parent="globals/MyIntervalLengthPickerDelegate" pc="268439204" symbol="onNextPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="41" lineNum="51" parent="globals/MyIntervalLengthPickerDelegate" pc="268439207" symbol="onSelect"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="41" lineNum="52" parent="globals/MyIntervalLengthPickerDelegate" pc="268439209" symbol="onSelect"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="41" lineNum="54" parent="globals/MyIntervalLengthPickerDelegate" pc="268439238" symbol="onSelect"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerDelegate.mc" id="41" lineNum="56" parent="globals/MyIntervalLengthPickerDelegate" pc="268439259" symbol="onSelect"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsApp.mc" id="42" lineNum="12" parent="globals/intervalsApp" pc="268439262" symbol="onStart"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsApp.mc" id="43" lineNum="20" parent="globals/intervalsApp" pc="268439265" symbol="getInitialView"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsApp.mc" id="43" lineNum="21" parent="globals/intervalsApp" pc="268439267" symbol="getInitialView"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsApp.mc" id="44" lineNum="7" parent="globals/intervalsApp" pc="268439334" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsApp.mc" id="44" lineNum="8" parent="globals/intervalsApp" pc="268439336" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsApp.mc" id="45" lineNum="16" parent="globals/intervalsApp" pc="268439355" symbol="onStop"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerView.mc" id="46" lineNum="33" parent="globals/MyNumberPickerView" pc="268439358" symbol="onLayout"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerView.mc" id="46" lineNum="34" parent="globals/MyNumberPickerView" pc="268439360" symbol="onLayout"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerView.mc" id="47" lineNum="29" parent="globals/MyNumberPickerView" pc="268439402" symbol="getMyValue"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerView.mc" id="47" lineNum="30" parent="globals/MyNumberPickerView" pc="268439404" symbol="getMyValue"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerView.mc" id="48" lineNum="25" parent="globals/MyNumberPickerView" pc="268439413" symbol="setMyValue"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerView.mc" id="48" lineNum="26" parent="globals/MyNumberPickerView" pc="268439415" symbol="setMyValue"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerView.mc" id="49" lineNum="11" parent="globals/MyNumberPickerView" pc="268439426" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerView.mc" id="49" lineNum="12" parent="globals/MyNumberPickerView" pc="268439430" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerView.mc" id="49" lineNum="14" parent="globals/MyNumberPickerView" pc="268439448" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerView.mc" id="49" lineNum="16" parent="globals/MyNumberPickerView" pc="268439470" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerView.mc" id="49" lineNum="17" parent="globals/MyNumberPickerView" pc="268439476" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerView.mc" id="49" lineNum="20" parent="globals/MyNumberPickerView" pc="268439492" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerView.mc" id="50" lineNum="39" parent="globals/MyNumberPickerView" pc="268439512" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerView.mc" id="50" lineNum="40" parent="globals/MyNumberPickerView" pc="268439516" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerView.mc" id="50" lineNum="42" parent="globals/MyNumberPickerView" pc="268439540" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerView.mc" id="50" lineNum="44" parent="globals/MyNumberPickerView" pc="268439569" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc" id="51" lineNum="24" parent="globals/SaveIntervalsDelegate" pc="268439590" symbol="onBack"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc" id="51" lineNum="25" parent="globals/SaveIntervalsDelegate" pc="268439592" symbol="onBack"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc" id="51" lineNum="26" parent="globals/SaveIntervalsDelegate" pc="268439619" symbol="onBack"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc" id="51" lineNum="27" parent="globals/SaveIntervalsDelegate" pc="268439640" symbol="onBack"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc" id="52" lineNum="8" parent="globals/SaveIntervalsDelegate" pc="268439643" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc" id="52" lineNum="9" parent="globals/SaveIntervalsDelegate" pc="268439645" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc" id="52" lineNum="11" parent="globals/SaveIntervalsDelegate" pc="268439663" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc" id="53" lineNum="16" parent="globals/SaveIntervalsDelegate" pc="268439674" symbol="onSelect"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc" id="53" lineNum="17" parent="globals/SaveIntervalsDelegate" pc="268439676" symbol="onSelect"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc" id="53" lineNum="18" parent="globals/SaveIntervalsDelegate" pc="268439703" symbol="onSelect"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc" id="53" lineNum="19" parent="globals/SaveIntervalsDelegate" pc="268439724" symbol="onSelect"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerView.mc" id="54" lineNum="33" parent="globals/MyPauseLengthPickerView" pc="268439727" symbol="onLayout"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerView.mc" id="54" lineNum="34" parent="globals/MyPauseLengthPickerView" pc="268439729" symbol="onLayout"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerView.mc" id="55" lineNum="29" parent="globals/MyPauseLengthPickerView" pc="268439771" symbol="getMyValue"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerView.mc" id="55" lineNum="30" parent="globals/MyPauseLengthPickerView" pc="268439773" symbol="getMyValue"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerView.mc" id="56" lineNum="25" parent="globals/MyPauseLengthPickerView" pc="268439782" symbol="setMyValue"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerView.mc" id="56" lineNum="26" parent="globals/MyPauseLengthPickerView" pc="268439784" symbol="setMyValue"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerView.mc" id="57" lineNum="11" parent="globals/MyPauseLengthPickerView" pc="268439795" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerView.mc" id="57" lineNum="12" parent="globals/MyPauseLengthPickerView" pc="268439799" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerView.mc" id="57" lineNum="14" parent="globals/MyPauseLengthPickerView" pc="268439817" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerView.mc" id="57" lineNum="16" parent="globals/MyPauseLengthPickerView" pc="268439839" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerView.mc" id="57" lineNum="17" parent="globals/MyPauseLengthPickerView" pc="268439845" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerView.mc" id="57" lineNum="20" parent="globals/MyPauseLengthPickerView" pc="268439861" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerView.mc" id="58" lineNum="39" parent="globals/MyPauseLengthPickerView" pc="268439881" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerView.mc" id="58" lineNum="40" parent="globals/MyPauseLengthPickerView" pc="268439885" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerView.mc" id="58" lineNum="42" parent="globals/MyPauseLengthPickerView" pc="268439909" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myPauseLengthPickerView.mc" id="58" lineNum="44" parent="globals/MyPauseLengthPickerView" pc="268440019" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="59" lineNum="10" parent="globals/MyNumberPickerDelegate" pc="268440040" symbol="getValue"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="59" lineNum="11" parent="globals/MyNumberPickerDelegate" pc="268440042" symbol="getValue"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="60" lineNum="38" parent="globals/MyNumberPickerDelegate" pc="268440051" symbol="onPreviousPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="60" lineNum="40" parent="globals/MyNumberPickerDelegate" pc="268440053" symbol="onPreviousPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="60" lineNum="41" parent="globals/MyNumberPickerDelegate" pc="268440070" symbol="onPreviousPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="60" lineNum="44" parent="globals/MyNumberPickerDelegate" pc="268440092" symbol="onPreviousPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="60" lineNum="46" parent="globals/MyNumberPickerDelegate" pc="268440118" symbol="onPreviousPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="60" lineNum="48" parent="globals/MyNumberPickerDelegate" pc="268440134" symbol="onPreviousPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="61" lineNum="14" parent="globals/MyNumberPickerDelegate" pc="268440137" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="61" lineNum="15" parent="globals/MyNumberPickerDelegate" pc="268440139" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="61" lineNum="17" parent="globals/MyNumberPickerDelegate" pc="268440157" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="61" lineNum="19" parent="globals/MyNumberPickerDelegate" pc="268440167" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="62" lineNum="22" parent="globals/MyNumberPickerDelegate" pc="268440193" symbol="onNextPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="62" lineNum="24" parent="globals/MyNumberPickerDelegate" pc="268440195" symbol="onNextPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="62" lineNum="25" parent="globals/MyNumberPickerDelegate" pc="268440212" symbol="onNextPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="62" lineNum="28" parent="globals/MyNumberPickerDelegate" pc="268440234" symbol="onNextPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="62" lineNum="31" parent="globals/MyNumberPickerDelegate" pc="268440247" symbol="onNextPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="62" lineNum="33" parent="globals/MyNumberPickerDelegate" pc="268440273" symbol="onNextPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="62" lineNum="35" parent="globals/MyNumberPickerDelegate" pc="268440289" symbol="onNextPage"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="63" lineNum="51" parent="globals/MyNumberPickerDelegate" pc="268440292" symbol="onSelect"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="63" lineNum="52" parent="globals/MyNumberPickerDelegate" pc="268440294" symbol="onSelect"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="63" lineNum="54" parent="globals/MyNumberPickerDelegate" pc="268440323" symbol="onSelect"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myNumberPickerDelegate.mc" id="63" lineNum="56" parent="globals/MyNumberPickerDelegate" pc="268440344" symbol="onSelect"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialMenuDelegate.mc" id="64" lineNum="11" parent="globals/intervalsMenuDelegate" pc="268440347" symbol="onMenuItem"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialMenuDelegate.mc" id="64" lineNum="12" parent="globals/intervalsMenuDelegate" pc="268440351" symbol="onMenuItem"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialMenuDelegate.mc" id="64" lineNum="13" parent="globals/intervalsMenuDelegate" pc="268440362" symbol="onMenuItem"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialMenuDelegate.mc" id="64" lineNum="14" parent="globals/intervalsMenuDelegate" pc="268440386" symbol="onMenuItem"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialMenuDelegate.mc" id="64" lineNum="15" parent="globals/intervalsMenuDelegate" pc="268440412" symbol="onMenuItem"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialMenuDelegate.mc" id="64" lineNum="17" parent="globals/intervalsMenuDelegate" pc="268440440" symbol="onMenuItem"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialMenuDelegate.mc" id="64" lineNum="18" parent="globals/intervalsMenuDelegate" pc="268440451" symbol="onMenuItem"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialMenuDelegate.mc" id="64" lineNum="19" parent="globals/intervalsMenuDelegate" pc="268440475" symbol="onMenuItem"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialMenuDelegate.mc" id="64" lineNum="20" parent="globals/intervalsMenuDelegate" pc="268440501" symbol="onMenuItem"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialMenuDelegate.mc" id="64" lineNum="22" parent="globals/intervalsMenuDelegate" pc="268440529" symbol="onMenuItem"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialMenuDelegate.mc" id="64" lineNum="23" parent="globals/intervalsMenuDelegate" pc="268440540" symbol="onMenuItem"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialMenuDelegate.mc" id="64" lineNum="24" parent="globals/intervalsMenuDelegate" pc="268440564" symbol="onMenuItem"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialMenuDelegate.mc" id="64" lineNum="25" parent="globals/intervalsMenuDelegate" pc="268440590" symbol="onMenuItem"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialMenuDelegate.mc" id="65" lineNum="7" parent="globals/intervalsMenuDelegate" pc="268440619" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intialMenuDelegate.mc" id="65" lineNum="8" parent="globals/intervalsMenuDelegate" pc="268440621" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerView.mc" id="66" lineNum="33" parent="globals/MyIntervalLengthPickerView" pc="268440640" symbol="onLayout"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerView.mc" id="66" lineNum="34" parent="globals/MyIntervalLengthPickerView" pc="268440642" symbol="onLayout"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerView.mc" id="67" lineNum="29" parent="globals/MyIntervalLengthPickerView" pc="268440684" symbol="getMyValue"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerView.mc" id="67" lineNum="30" parent="globals/MyIntervalLengthPickerView" pc="268440686" symbol="getMyValue"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerView.mc" id="68" lineNum="25" parent="globals/MyIntervalLengthPickerView" pc="268440695" symbol="setMyValue"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerView.mc" id="68" lineNum="26" parent="globals/MyIntervalLengthPickerView" pc="268440697" symbol="setMyValue"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerView.mc" id="69" lineNum="11" parent="globals/MyIntervalLengthPickerView" pc="268440708" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerView.mc" id="69" lineNum="12" parent="globals/MyIntervalLengthPickerView" pc="268440712" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerView.mc" id="69" lineNum="14" parent="globals/MyIntervalLengthPickerView" pc="268440730" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerView.mc" id="69" lineNum="16" parent="globals/MyIntervalLengthPickerView" pc="268440752" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerView.mc" id="69" lineNum="17" parent="globals/MyIntervalLengthPickerView" pc="268440758" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerView.mc" id="69" lineNum="20" parent="globals/MyIntervalLengthPickerView" pc="268440774" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerView.mc" id="70" lineNum="39" parent="globals/MyIntervalLengthPickerView" pc="268440794" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerView.mc" id="70" lineNum="40" parent="globals/MyIntervalLengthPickerView" pc="268440798" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerView.mc" id="70" lineNum="42" parent="globals/MyIntervalLengthPickerView" pc="268440822" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/myIntervalLengthPickerView.mc" id="70" lineNum="44" parent="globals/MyIntervalLengthPickerView" pc="268440932" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsInitView.mc" id="71" lineNum="13" parent="globals/InitialWatchView" pc="268440953" symbol="onLayout"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsInitView.mc" id="71" lineNum="14" parent="globals/InitialWatchView" pc="268440955" symbol="onLayout"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsInitView.mc" id="72" lineNum="9" parent="globals/InitialWatchView" pc="268440997" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsInitView.mc" id="72" lineNum="10" parent="globals/InitialWatchView" pc="268440999" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsInitView.mc" id="73" lineNum="19" parent="globals/InitialWatchView" pc="268441018" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsInitView.mc" id="73" lineNum="20" parent="globals/InitialWatchView" pc="268441022" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsInitView.mc" id="73" lineNum="22" parent="globals/InitialWatchView" pc="268441042" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/source/intervalsInitView.mc" id="73" lineNum="24" parent="globals/InitialWatchView" pc="268441066" symbol="onUpdate"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/bin/gen/006-B4005-00/source/Rez.mcgen" id="74" lineNum="35" parent="globals/Rez/Layouts" pc="268441103" symbol="NumberPicker"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/bin/gen/006-B4005-00/source/Rez.mcgen" id="74" lineNum="36" parent="globals/Rez/Layouts" pc="268441115" symbol="NumberPicker"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/bin/gen/006-B4005-00/source/Rez.mcgen" id="74" lineNum="38" parent="globals/Rez/Layouts" pc="268441268" symbol="NumberPicker"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/bin/gen/006-B4005-00/source/Rez.mcgen" id="75" lineNum="29" parent="globals/Rez/Layouts" pc="268441285" symbol="InitLayout"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/bin/gen/006-B4005-00/source/Rez.mcgen" id="75" lineNum="30" parent="globals/Rez/Layouts" pc="268441297" symbol="InitLayout"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/bin/gen/006-B4005-00/source/Rez.mcgen" id="75" lineNum="32" parent="globals/Rez/Layouts" pc="268441433" symbol="InitLayout"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/bin/gen/006-B4005-00/source/Rez.mcgen" id="76" lineNum="13" parent="globals/Rez/Layouts" pc="268441450" symbol="MainLayout"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/bin/gen/006-B4005-00/source/Rez.mcgen" id="76" lineNum="14" parent="globals/Rez/Layouts" pc="268441462" symbol="MainLayout"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/bin/gen/006-B4005-00/source/Rez.mcgen" id="76" lineNum="16" parent="globals/Rez/Layouts" pc="268441475" symbol="MainLayout"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/bin/gen/006-B4005-00/source/Rez.mcgen" id="76" lineNum="18" parent="globals/Rez/Layouts" pc="268441488" symbol="MainLayout"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/bin/gen/006-B4005-00/source/Rez.mcgen" id="76" lineNum="20" parent="globals/Rez/Layouts" pc="268441606" symbol="MainLayout"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/bin/gen/006-B4005-00/source/Rez.mcgen" id="76" lineNum="22" parent="globals/Rez/Layouts" pc="268441724" symbol="MainLayout"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/bin/gen/006-B4005-00/source/Rez.mcgen" id="76" lineNum="24" parent="globals/Rez/Layouts" pc="268441842" symbol="MainLayout"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/bin/gen/006-B4005-00/source/Rez.mcgen" id="76" lineNum="26" parent="globals/Rez/Layouts" pc="268441954" symbol="MainLayout"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/bin/gen/006-B4005-00/source/Rez.mcgen" id="77" lineNum="43" parent="globals/Rez/Menus/MainMenu" pc="268442001" symbol="&lt;init&gt;"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/bin/gen/006-B4005-00/source/Rez.mcgen" id="78" lineNum="44" parent="globals/Rez/Menus/MainMenu" pc="268442020" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/bin/gen/006-B4005-00/source/Rez.mcgen" id="78" lineNum="45" parent="globals/Rez/Menus/MainMenu" pc="268442022" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/bin/gen/006-B4005-00/source/Rez.mcgen" id="78" lineNum="46" parent="globals/Rez/Menus/MainMenu" pc="268442040" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/bin/gen/006-B4005-00/source/Rez.mcgen" id="78" lineNum="47" parent="globals/Rez/Menus/MainMenu" pc="268442096" symbol="initialize"/>
+        <entry filename="/home/avl/data/src/garmin/intervals/intervals/bin/gen/006-B4005-00/source/Rez.mcgen" id="78" lineNum="48" parent="globals/Rez/Menus/MainMenu" pc="268442152" symbol="initialize"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry field="true" id="50" symbol="&lt;globals/MyNumberPickerDelegate/&lt;&gt;_parentView&gt;"/>
+        <entry id="5" module="true" symbol="globals/Rez/Menus"/>
+        <entry field="true" id="35" symbol="&lt;globals/intervalsView/&lt;&gt;_vibeStartData&gt;"/>
+        <entry id="8" object="true" symbol="MyIntervalLengthPickerDelegate"/>
+        <entry id="8388638" module="true" symbol="ActivityRecording"/>
+        <entry id="55" method="true" symbol="MainLayout"/>
+        <entry field="true" id="52" symbol="&lt;globals/MyIntervalLengthPickerView/&lt;&gt;myValue&gt;"/>
+        <entry field="true" id="8388890" symbol="sport"/>
+        <entry id="7" object="true" symbol="InitialWatchView"/>
+        <entry id="8390424" module="true" symbol="Storage"/>
+        <entry id="8389041" method="true" object="true" symbol="NumberPicker"/>
+        <entry id="16" object="true" symbol="initialIntervalsDelegate"/>
+        <entry field="true" id="34" symbol="&lt;globals/intervalsView/&lt;&gt;_vibeEndData&gt;"/>
+        <entry id="8389629" method="true" symbol="getValue"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry id="17" object="true" symbol="intervalsApp"/>
+        <entry field="true" id="21" symbol="&lt;globals/MyPauseLengthPickerDelegate/&lt;&gt;myvalue&gt;"/>
+        <entry id="13" object="true" symbol="MyPauseLengthPickerView"/>
+        <entry field="true" id="57" symbol="AppName"/>
+        <entry id="6" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8389080" method="true" symbol="onMenu"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="8389081" method="true" symbol="onBack"/>
+        <entry id="8390425" module="true" symbol="Properties"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="63" symbol="prompt"/>
+        <entry field="true" id="20" symbol="&lt;globals/MyPauseLengthPickerDelegate/&lt;&gt;_parentView&gt;"/>
+        <entry field="true" id="59" symbol="interval"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry field="true" id="51" symbol="&lt;globals/MyNumberPickerDelegate/&lt;&gt;myvalue&gt;"/>
+        <entry field="true" id="43" symbol="&lt;globals/MyIntervalLengthPickerDelegate/&lt;&gt;_parentView&gt;"/>
+        <entry id="67" symbol="item_3"/>
+        <entry id="66" symbol="item_2"/>
+        <entry id="65" symbol="item_1"/>
+        <entry id="8389079" method="true" symbol="onPreviousPage"/>
+        <entry id="40" module="true" symbol="Menus"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="8388987" method="true" symbol="vibrate"/>
+        <entry id="11" object="true" symbol="MyNumberPickerView"/>
+        <entry field="true" id="29" symbol="&lt;globals/intervalsView/&lt;&gt;_isTimer1&gt;"/>
+        <entry field="true" id="44" symbol="&lt;globals/MyIntervalLengthPickerDelegate/&lt;&gt;myvalue&gt;"/>
+        <entry field="true" id="25" symbol="&lt;globals/intervalsView/&lt;&gt;_int_cnt&gt;"/>
+        <entry field="true" id="23" symbol="&lt;globals/intervalsView/&lt;&gt;_count2&gt;"/>
+        <entry id="12" object="true" symbol="MyPauseLengthPickerDelegate"/>
+        <entry field="true" id="22" symbol="&lt;globals/intervalsView/&lt;&gt;_count1&gt;"/>
+        <entry id="15" object="true" symbol="SaveIntervalsView"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="18" object="true" symbol="intervalsMenuDelegate"/>
+        <entry id="56" object="true" symbol="MainMenu"/>
+        <entry field="true" id="24" symbol="&lt;globals/intervalsView/&lt;&gt;_hrString&gt;"/>
+        <entry id="47" method="true" symbol="setMyValue"/>
+        <entry field="true" id="49" symbol="&lt;globals/MyPauseLengthPickerView/&lt;&gt;myValue&gt;"/>
+        <entry id="9" object="true" symbol="MyIntervalLengthPickerView"/>
+        <entry field="true" id="28" symbol="&lt;globals/intervalsView/&lt;&gt;_intervals&gt;"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8389619" method="true" symbol="onSelect"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="53" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry field="true" id="64" symbol="prompt_save"/>
+        <entry id="8388643" module="true" symbol="Sensor"/>
+        <entry field="true" id="46" symbol="&lt;globals/MyNumberPickerView/&lt;&gt;myValue&gt;"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="36" method="true" symbol="onSnsr"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry field="true" id="26" symbol="&lt;globals/intervalsView/&lt;&gt;_int_length&gt;"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry field="true" id="33" symbol="&lt;globals/intervalsView/&lt;&gt;_timer2&gt;"/>
+        <entry field="true" id="32" symbol="&lt;globals/intervalsView/&lt;&gt;_timer1&gt;"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="8388891" symbol="subSport"/>
+        <entry field="true" id="27" symbol="&lt;globals/intervalsView/&lt;&gt;_int_pause&gt;"/>
+        <entry field="true" id="8388892" symbol="name"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="19" object="true" symbol="intervalsView"/>
+        <entry id="8389109" method="true" symbol="onMenuItem"/>
+        <entry field="true" id="8389347" symbol="color"/>
+        <entry id="14" object="true" symbol="SaveIntervalsDelegate"/>
+        <entry field="true" id="31" symbol="&lt;globals/intervalsView/&lt;&gt;_session&gt;"/>
+        <entry field="true" id="58" symbol="int_pause"/>
+        <entry id="45" method="true" symbol="getMyValue"/>
+        <entry id="8388646" module="true" object="true" symbol="Timer"/>
+        <entry id="39" module="true" symbol="Layouts"/>
+        <entry id="42" method="true" symbol="getSession"/>
+        <entry id="54" method="true" symbol="InitLayout"/>
+        <entry id="8388636" module="true" symbol="Attention"/>
+        <entry id="38" method="true" symbol="onTimer2"/>
+        <entry id="37" method="true" symbol="onTimer1"/>
+        <entry field="true" id="30" symbol="&lt;globals/intervalsView/&lt;&gt;_radius&gt;"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry field="true" id="41" symbol="&lt;globals/SaveIntervalsView/&lt;&gt;_session&gt;"/>
+        <entry id="10" object="true" symbol="MyNumberPickerDelegate"/>
+        <entry id="8389078" method="true" symbol="onNextPage"/>
+        <entry field="true" id="48" symbol="&lt;globals/SaveIntervalsDelegate/&lt;&gt;_parentView&gt;"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="62" symbol="menu_label_3"/>
+        <entry field="true" id="61" symbol="menu_label_2"/>
+        <entry field="true" id="60" symbol="menu_label_1"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268436295" name="view" stackId="1" startPc="268436240"/>
+        <entry arg="true" endPc="268436711" name="dc" stackId="1" startPc="268436668"/>
+        <entry arg="true" endPc="268436790" name="sensorInfo" stackId="1" startPc="268436712"/>
+        <entry endPc="268436789" name="heartRate" stackId="2" startPc="268436716"/>
+        <entry endPc="268437270" name="view" stackId="1" startPc="268437078"/>
+        <entry endPc="268437270" name="del" stackId="2" startPc="268437078"/>
+        <entry endPc="268437783" name="store_p" stackId="1" startPc="268437399"/>
+        <entry endPc="268437783" name="store_i" stackId="2" startPc="268437399"/>
+        <entry endPc="268437783" name="store_n" stackId="3" startPc="268437399"/>
+        <entry arg="true" endPc="268438783" name="dc" stackId="1" startPc="268437966"/>
+        <entry endPc="268438782" name="view_time" stackId="2" startPc="268437970"/>
+        <entry endPc="268438782" name="view_status" stackId="3" startPc="268437970"/>
+        <entry endPc="268438782" name="view_heart" stackId="4" startPc="268437970"/>
+        <entry endPc="268438782" name="view_counter" stackId="5" startPc="268437970"/>
+        <entry arg="true" endPc="268438827" name="dc" stackId="1" startPc="268438784"/>
+        <entry arg="true" endPc="268438858" name="session" stackId="1" startPc="268438828"/>
+        <entry arg="true" endPc="268438954" name="dc" stackId="1" startPc="268438870"/>
+        <entry endPc="268438953" name="prompt" stackId="2" startPc="268438874"/>
+        <entry arg="true" endPc="268439107" name="view" stackId="1" startPc="268439052"/>
+        <entry arg="true" endPc="268439401" name="dc" stackId="1" startPc="268439358"/>
+        <entry arg="true" endPc="268439425" name="val" stackId="1" startPc="268439413"/>
+        <entry endPc="268439510" name="store" stackId="1" startPc="268439430"/>
+        <entry arg="true" endPc="268439589" name="dc" stackId="1" startPc="268439512"/>
+        <entry endPc="268439588" name="prompt" stackId="2" startPc="268439516"/>
+        <entry arg="true" endPc="268439673" name="view" stackId="1" startPc="268439643"/>
+        <entry arg="true" endPc="268439770" name="dc" stackId="1" startPc="268439727"/>
+        <entry arg="true" endPc="268439794" name="val" stackId="1" startPc="268439782"/>
+        <entry endPc="268439879" name="store" stackId="1" startPc="268439799"/>
+        <entry arg="true" endPc="268440039" name="dc" stackId="1" startPc="268439881"/>
+        <entry endPc="268440038" name="prompt" stackId="2" startPc="268439885"/>
+        <entry arg="true" endPc="268440192" name="view" stackId="1" startPc="268440137"/>
+        <entry arg="true" endPc="268440618" name="item" stackId="1" startPc="268440347"/>
+        <entry endPc="268440436" name="view" stackId="2" startPc="268440362"/>
+        <entry endPc="268440436" name="picker" stackId="3" startPc="268440362"/>
+        <entry endPc="268440525" name="view" stackId="4" startPc="268440451"/>
+        <entry endPc="268440525" name="picker" stackId="5" startPc="268440451"/>
+        <entry endPc="268440614" name="view" stackId="6" startPc="268440540"/>
+        <entry endPc="268440614" name="picker" stackId="7" startPc="268440540"/>
+        <entry arg="true" endPc="268440683" name="dc" stackId="1" startPc="268440640"/>
+        <entry arg="true" endPc="268440707" name="val" stackId="1" startPc="268440695"/>
+        <entry endPc="268440792" name="store" stackId="1" startPc="268440712"/>
+        <entry arg="true" endPc="268440952" name="dc" stackId="1" startPc="268440794"/>
+        <entry endPc="268440951" name="prompt" stackId="2" startPc="268440798"/>
+        <entry arg="true" endPc="268440996" name="dc" stackId="1" startPc="268440953"/>
+        <entry arg="true" endPc="268441102" name="dc" stackId="1" startPc="268441018"/>
+        <entry endPc="268441101" name="prompt" stackId="2" startPc="268441022"/>
+        <entry arg="true" endPc="268441284" name="dc" stackId="1" startPc="268441103"/>
+        <entry endPc="268441284" name="rez_cmp_local_text_myvalue" stackId="2" startPc="268441115"/>
+        <entry arg="true" endPc="268441449" name="dc" stackId="1" startPc="268441285"/>
+        <entry endPc="268441449" name="rez_cmp_local_text_prompt" stackId="2" startPc="268441297"/>
+        <entry arg="true" endPc="268442000" name="dc" stackId="1" startPc="268441450"/>
+        <entry endPc="268442000" name="rez_cmp_local_var_dc_getHeight" stackId="2" startPc="268441462"/>
+        <entry endPc="268442000" name="rez_cmp_local_var_dc_getWidth" stackId="3" startPc="268441462"/>
+        <entry endPc="268442000" name="rez_cmp_local_text_StatusLabel" stackId="4" startPc="268441462"/>
+        <entry endPc="268442000" name="rez_cmp_local_text_TimeLabel" stackId="5" startPc="268441462"/>
+        <entry endPc="268442000" name="rez_cmp_local_text_HeartLabel" stackId="6" startPc="268441462"/>
+        <entry endPc="268442000" name="rez_cmp_local_text_CountLabel" stackId="7" startPc="268441462"/>
+    </localVars>
+    <deviceInfo deviceVersion="45fe3cbb0de8ea0a70e12628d2697915f1272301" partNumber="006-B4005-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_3"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_2"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="interval"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="prompt_save"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="int_pause"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_1"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="prompt"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="71" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/initialIntervalsDelegate" offset="230" parentId="globals" symbolId="initialIntervalsDelegate" type="class"/>
+        <dataEntry label="globals/MyPauseLengthPickerDelegate" offset="301" parentId="globals" symbolId="MyPauseLengthPickerDelegate" type="class"/>
+        <dataEntry label="globals/intervalsView" offset="396" parentId="globals" symbolId="intervalsView" type="class"/>
+        <dataEntry label="globals/Rez" offset="611" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/SaveIntervalsView" offset="674" parentId="globals" symbolId="SaveIntervalsView" type="class"/>
+        <dataEntry label="globals/MyIntervalLengthPickerDelegate" offset="753" parentId="globals" symbolId="MyIntervalLengthPickerDelegate" type="class"/>
+        <dataEntry label="globals/intervalsApp" offset="848" parentId="globals" symbolId="intervalsApp" type="class"/>
+        <dataEntry label="globals/MyNumberPickerView" offset="919" parentId="globals" symbolId="MyNumberPickerView" type="class"/>
+        <dataEntry label="globals/SaveIntervalsDelegate" offset="1006" parentId="globals" symbolId="SaveIntervalsDelegate" type="class"/>
+        <dataEntry label="globals/MyPauseLengthPickerView" offset="1077" parentId="globals" symbolId="MyPauseLengthPickerView" type="class"/>
+        <dataEntry label="globals/MyNumberPickerDelegate" offset="1164" parentId="globals" symbolId="MyNumberPickerDelegate" type="class"/>
+        <dataEntry label="globals/intervalsMenuDelegate" offset="1259" parentId="globals" symbolId="intervalsMenuDelegate" type="class"/>
+        <dataEntry label="globals/MyIntervalLengthPickerView" offset="1314" parentId="globals" symbolId="MyIntervalLengthPickerView" type="class"/>
+        <dataEntry label="globals/InitialWatchView" offset="1401" parentId="globals" symbolId="InitialWatchView" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1464" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1503" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="1558" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1597" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="1692" parentId="Menus" symbolId="MainMenu" type="class"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="initialIntervalsDelegate" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435497" name="&lt;init&gt;" parent="MyPauseLengthPickerDelegate" startPc="268435479">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435523" name="getApp" startPc="268435498">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435746" name="&lt;init&gt;" parent="intervalsView" startPc="268435524">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435770" name="&lt;init&gt;" parent="Rez" startPc="268435747">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435789" name="&lt;init&gt;" parent="SaveIntervalsView" startPc="268435771">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435808" name="&lt;init&gt;" parent="MyIntervalLengthPickerDelegate" startPc="268435790">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435827" name="&lt;init&gt;" parent="intervalsApp" startPc="268435809">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435846" name="&lt;init&gt;" parent="MyNumberPickerView" startPc="268435828">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435865" name="&lt;init&gt;" parent="SaveIntervalsDelegate" startPc="268435847">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435884" name="&lt;init&gt;" parent="MyPauseLengthPickerView" startPc="268435866">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435903" name="&lt;init&gt;" parent="MyNumberPickerDelegate" startPc="268435885">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435922" name="&lt;init&gt;" parent="intervalsMenuDelegate" startPc="268435904">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435941" name="&lt;init&gt;" parent="MyIntervalLengthPickerView" startPc="268435923">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435960" name="&lt;init&gt;" parent="InitialWatchView" startPc="268435942">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435986" name="onBack" parent="initialIntervalsDelegate" startPc="268435961">
+            <documentation><![CDATA[<div class="description"> Handle back behavior<br/> <div class="returns">Returns  true if handled, false otherwise</div><br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436072" name="onMenu" parent="initialIntervalsDelegate" startPc="268435987">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436093" name="initialize" parent="initialIntervalsDelegate" startPc="268436073">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436142" name="onSelect" parent="initialIntervalsDelegate" startPc="268436094">
+            <documentation><![CDATA[<div class="description"> On a select event, start the intervals<br/> <div class="returns">Returns  true if handled, false otherwise</div><br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436153" name="getValue" parent="MyPauseLengthPickerDelegate" startPc="268436143">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436239" name="onPreviousPage" parent="MyPauseLengthPickerDelegate" startPc="268436154">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436295" name="initialize" parent="MyPauseLengthPickerDelegate" startPc="268436240">
+            <param id="view"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436394" name="onNextPage" parent="MyPauseLengthPickerDelegate" startPc="268436296">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436449" name="onSelect" parent="MyPauseLengthPickerDelegate" startPc="268436395">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436667" name="onShow" parent="intervalsView" startPc="268436450">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436711" name="onLayout" parent="intervalsView" startPc="268436668">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436790" name="onSnsr" parent="intervalsView" startPc="268436712">
+            <param id="sensorInfo"/>
+            <documentation><![CDATA[<div class="description"> Handle sensor updates<br/> <div class="param"> sensorInfo Updated sensor data</div><br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436975" name="onTimer1" parent="intervalsView" startPc="268436791">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437394" name="onTimer2" parent="intervalsView" startPc="268436976">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437784" name="initialize" parent="intervalsView" startPc="268437395">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437965" name="onHide" parent="intervalsView" startPc="268437785">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438783" name="onUpdate" parent="intervalsView" startPc="268437966">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438827" name="onLayout" parent="SaveIntervalsView" startPc="268438784">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438858" name="initialize" parent="SaveIntervalsView" startPc="268438828">
+            <param id="session"/>
+            <documentation><![CDATA[<div class="description"> Constructor<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438869" name="getSession" parent="SaveIntervalsView" startPc="268438859">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438954" name="onUpdate" parent="SaveIntervalsView" startPc="268438870">
+            <param id="dc"/>
+            <documentation><![CDATA[<div class="description"> Update the view<br/> <div class="param"> dc Device context</div><br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438965" name="getValue" parent="MyIntervalLengthPickerDelegate" startPc="268438955">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439051" name="onPreviousPage" parent="MyIntervalLengthPickerDelegate" startPc="268438966">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439107" name="initialize" parent="MyIntervalLengthPickerDelegate" startPc="268439052">
+            <param id="view"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439206" name="onNextPage" parent="MyIntervalLengthPickerDelegate" startPc="268439108">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439261" name="onSelect" parent="MyIntervalLengthPickerDelegate" startPc="268439207">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439264" name="onStart" parent="intervalsApp" startPc="268439262">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439333" name="getInitialView" parent="intervalsApp" startPc="268439265">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439354" name="initialize" parent="intervalsApp" startPc="268439334">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439357" name="onStop" parent="intervalsApp" startPc="268439355">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439401" name="onLayout" parent="MyNumberPickerView" startPc="268439358">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439412" name="getMyValue" parent="MyNumberPickerView" startPc="268439402">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439425" name="setMyValue" parent="MyNumberPickerView" startPc="268439413">
+            <param id="val"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439511" name="initialize" parent="MyNumberPickerView" startPc="268439426">
+            <documentation><![CDATA[<div class="description"> Constructor<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439589" name="onUpdate" parent="MyNumberPickerView" startPc="268439512">
+            <param id="dc"/>
+            <documentation><![CDATA[<div class="description"> Update the view<br/> <div class="param"> dc Device context</div><br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439642" name="onBack" parent="SaveIntervalsDelegate" startPc="268439590">
+            <documentation><![CDATA[<div class="description"> Handle back behavior<br/> <div class="returns">Returns  true if handled, false otherwise</div><br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439673" name="initialize" parent="SaveIntervalsDelegate" startPc="268439643">
+            <param id="view"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439726" name="onSelect" parent="SaveIntervalsDelegate" startPc="268439674">
+            <documentation><![CDATA[<div class="description"> On a select event, start the intervals<br/> <div class="returns">Returns  true if handled, false otherwise</div><br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439770" name="onLayout" parent="MyPauseLengthPickerView" startPc="268439727">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439781" name="getMyValue" parent="MyPauseLengthPickerView" startPc="268439771">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439794" name="setMyValue" parent="MyPauseLengthPickerView" startPc="268439782">
+            <param id="val"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439880" name="initialize" parent="MyPauseLengthPickerView" startPc="268439795">
+            <documentation><![CDATA[<div class="description"> Constructor<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440039" name="onUpdate" parent="MyPauseLengthPickerView" startPc="268439881">
+            <param id="dc"/>
+            <documentation><![CDATA[<div class="description"> Update the view<br/> <div class="param"> dc Device context</div><br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440050" name="getValue" parent="MyNumberPickerDelegate" startPc="268440040">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440136" name="onPreviousPage" parent="MyNumberPickerDelegate" startPc="268440051">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440192" name="initialize" parent="MyNumberPickerDelegate" startPc="268440137">
+            <param id="view"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440291" name="onNextPage" parent="MyNumberPickerDelegate" startPc="268440193">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440346" name="onSelect" parent="MyNumberPickerDelegate" startPc="268440292">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440618" name="onMenuItem" parent="intervalsMenuDelegate" startPc="268440347">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440639" name="initialize" parent="intervalsMenuDelegate" startPc="268440619">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440683" name="onLayout" parent="MyIntervalLengthPickerView" startPc="268440640">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440694" name="getMyValue" parent="MyIntervalLengthPickerView" startPc="268440684">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440707" name="setMyValue" parent="MyIntervalLengthPickerView" startPc="268440695">
+            <param id="val"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440793" name="initialize" parent="MyIntervalLengthPickerView" startPc="268440708">
+            <documentation><![CDATA[<div class="description"> Constructor<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440952" name="onUpdate" parent="MyIntervalLengthPickerView" startPc="268440794">
+            <param id="dc"/>
+            <documentation><![CDATA[<div class="description"> Update the view<br/> <div class="param"> dc Device context</div><br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440996" name="onLayout" parent="InitialWatchView" startPc="268440953">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441017" name="initialize" parent="InitialWatchView" startPc="268440997">
+            <documentation><![CDATA[<div class="description"> Constructor<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441102" name="onUpdate" parent="InitialWatchView" startPc="268441018">
+            <param id="dc"/>
+            <documentation><![CDATA[<div class="description"> Update the view<br/> <div class="param"> dc Device context</div><br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441284" name="NumberPicker" parent="Layouts" startPc="268441103">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441449" name="InitLayout" parent="Layouts" startPc="268441285">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442000" name="MainLayout" parent="Layouts" startPc="268441450">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442019" name="&lt;init&gt;" parent="MainMenu" startPc="268442001">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442208" name="initialize" parent="MainMenu" startPc="268442020">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

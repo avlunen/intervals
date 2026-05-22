@@ -1,0 +1,1196 @@
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Timer,3,14,19]; ]
+import Toybox.Timer;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Lang,4,14,18]; ]
+import Toybox.Lang;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Sensor,5,14,20]; ]
+import Toybox.Sensor;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 6; @symbol_importdef<0> = [Toybox,6,7,13]; @symbol_importdef<1> = [Attention,6,14,23]; ]
+import Toybox.Attention;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 7; @symbol_importdef<0> = [Toybox,7,7,13]; @symbol_importdef<1> = [Application,7,14,25]; @symbol_importdef<2> = [Storage,7,26,33]; ]
+import Toybox.Application.Storage;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 8; @symbol_importdef<0> = [Toybox,8,7,13]; @symbol_importdef<1> = [ActivityRecording,8,14,31]; ]
+import Toybox.ActivityRecording;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 10; @symbol_classdef = [intervalsView,10,6,19]; @symbol_extends<0> = [WatchUi,10,28,35]; @symbol_extends<1> = [View,10,36,40]; ]
+class intervalsView extends WatchUi.View {
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 10; ]
+    <init> {
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 21 16 ]
+        %tmp.1 = newa 1;
+        symbol [ Attention %tmp.4 21 37 46 ];
+        %tmp.4 = getm $.Toybox.Attention;
+        symbol [ VibeProfile %tmp.5 21 47 58 ];
+        %tmp.5 = getv function ? %tmp.4 :VibeProfile;
+        %tmp.6 = 75;
+        %tmp.7 = 2000;
+        %tmp.2 = newc %tmp.5 (%tmp.6, %tmp.7);
+        %tmp.8 = dup %tmp.1;
+        %tmp.9 = aputv %tmp.8 0 %tmp.2;
+        putv self :_vibeEndData %tmp.9;
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 22 16 ]
+        %tmp.10 = newa 3;
+        symbol [ Attention %tmp.13 22 39 48 ];
+        %tmp.13 = getm $.Toybox.Attention;
+        symbol [ VibeProfile %tmp.14 22 49 60 ];
+        %tmp.14 = getv function ? %tmp.13 :VibeProfile;
+        %tmp.15 = 50;
+        %tmp.16 = 400;
+        %tmp.11 = newc %tmp.14 (%tmp.15, %tmp.16);
+        %tmp.17 = dup %tmp.10;
+        %tmp.18 = aputv %tmp.17 0 %tmp.11;
+        symbol [ Attention %tmp.21 23 40 49 ];
+        %tmp.21 = getm $.Toybox.Attention;
+        symbol [ VibeProfile %tmp.22 23 50 61 ];
+        %tmp.22 = getv function ? %tmp.21 :VibeProfile;
+        %tmp.23 = 0;
+        %tmp.24 = 100;
+        %tmp.19 = newc %tmp.22 (%tmp.23, %tmp.24);
+        %tmp.25 = dup %tmp.18;
+        %tmp.26 = aputv %tmp.25 1 %tmp.19;
+        symbol [ Attention %tmp.29 24 40 49 ];
+        %tmp.29 = getm $.Toybox.Attention;
+        symbol [ VibeProfile %tmp.30 24 50 61 ];
+        %tmp.30 = getv function ? %tmp.29 :VibeProfile;
+        %tmp.31 = 50;
+        %tmp.32 = 400;
+        %tmp.27 = newc %tmp.30 (%tmp.31, %tmp.32);
+        %tmp.33 = dup %tmp.26;
+        %tmp.34 = aputv %tmp.33 2 %tmp.27;
+        putv self :_vibeStartData %tmp.34;
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 10; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 11; @position = 16; @symbol_vardef = [_count1,11,16,23]; @symbol_type<0> = [Number,11,27,33]; ]
+    private
+    var _count1 as Number = 0;
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 12; @position = 16; @symbol_vardef = [_count2,12,16,23]; @symbol_type<0> = [Number,12,27,33]; ]
+    private
+    var _count2 as Number = 0;
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 13; @position = 16; @symbol_vardef = [_int_cnt,13,16,24]; @symbol_type<0> = [Number,13,28,34]; ]
+    private
+    var _int_cnt as Number = 0;
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 14; @position = 16; @symbol_vardef = [_hrString,14,16,25]; @symbol_type<0> = [String,14,29,35]; ]
+    private
+    var _hrString as String;
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 15; @position = 16; @symbol_vardef = [_timer1,15,16,23]; @symbol_type<0> = [Timer,15,27,32]; @symbol_type<1> = [Timer,15,33,38]; ]
+    private
+    var _timer1 as Timer.Timer or Null;
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 16; @position = 16; @symbol_vardef = [_timer2,16,16,23]; @symbol_type<0> = [Timer,16,27,32]; @symbol_type<1> = [Timer,16,33,38]; ]
+    private
+    var _timer2 as Timer.Timer or Null;
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 17; @position = 16; @symbol_vardef = [_radius,17,16,23]; @symbol_type<0> = [Number,17,27,33]; ]
+    private
+    var _radius as Number = 28;
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 18; @position = 16; @symbol_vardef = [_int_length,18,16,27]; @symbol_type<0> = [Number,18,31,37]; ]
+    private
+    var _int_length as Number = 30;
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 19; @position = 16; @symbol_vardef = [_int_pause,19,16,26]; @symbol_type<0> = [Number,19,30,36]; ]
+    private
+    var _int_pause as Number = 15;
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 20; @position = 16; @symbol_vardef = [_intervals,20,16,26]; @symbol_type<0> = [Number,20,30,36]; ]
+    private
+    var _intervals as Number = 5;
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 21; @position = 16; @symbol_vardef = [_vibeEndData,21,16,28]; ]
+    private
+    var _vibeEndData;
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 22; @position = 16; @symbol_vardef = [_vibeStartData,22,16,30]; ]
+    private
+    var _vibeStartData;
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 25; @position = 16; @symbol_vardef = [_isTimer1,25,16,25]; @symbol_type<0> = [Boolean,25,29,36]; ]
+    private
+    var _isTimer1 as Boolean = true;
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 26; @position = 16; @symbol_vardef = [_session,26,16,24]; @symbol_type<0> = [Session,26,28,35]; ]
+    private
+    var _session as Session or Null;
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 28; @symbol_functiondef = [initialize,28,13,23]; ]
+    function initialize() as Void {
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_28_26_62_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 29 8 ]
+        symbol [ View %tmp.2 29 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 29 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 31 8 ]
+        symbol [ Sensor %tmp.4 31 8 14 ];
+        %tmp.4 = getm $.Toybox.Sensor;
+        symbol [ setEnabledSensors %tmp.5 31 15 32 ];
+        %tmp.5 = getv function %tmp.4 :setEnabledSensors;
+        %tmp.6 = newa 1;
+        symbol [ Sensor %tmp.7 31 34 40 ];
+        %tmp.7 = getm $.Toybox.Sensor;
+        symbol [ SENSOR_HEARTRATE %tmp.8 31 41 57 ];
+        %tmp.8 = getv %tmp.7 :SENSOR_HEARTRATE;
+        %tmp.9 = dup %tmp.6;
+        %tmp.10 = aputv %tmp.9 0 %tmp.8;
+        invoke %tmp.4 %tmp.5(%tmp.10);
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 32 8 ]
+        symbol [ Sensor %tmp.11 32 8 14 ];
+        %tmp.11 = getm $.Toybox.Sensor;
+        symbol [ enableSensorEvents %tmp.12 32 15 33 ];
+        %tmp.12 = getv function %tmp.11 :enableSensorEvents;
+        %tmp.13 = self;
+        symbol [ method %tmp.14 32 34 40 ];
+        %tmp.14 = getv function %tmp.13 :method;
+        %tmp.16 = const :onSnsr;
+        symbol [ onSnsr %tmp.16 32 42 48 const ];
+        %tmp.17 = invoke %tmp.13 %tmp.14(%tmp.16);
+        invoke %tmp.11 %tmp.12(%tmp.17);
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 34 8 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_34_8_37_8_if_stmt:
+        symbol [ Toybox %tmp.19 34 12 18 ];
+        %tmp.19 = getv ? :Toybox;
+        %tmp.21 = const :ActivityRecording;
+        symbol [ ActivityRecording %tmp.21 34 24 41 const ];
+        %tmp.22 = canhazplz %tmp.19 %tmp.21;
+        bf %tmp.22 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_34_8_37_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_34_8_37_8_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_34_43_37_8_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 35 12 ]
+        symbol [ ActivityRecording %tmp.23 35 23 40 ];
+        %tmp.23 = getm $.Toybox.ActivityRecording;
+        symbol [ createSession %tmp.24 35 41 54 ];
+        %tmp.24 = getv function %tmp.23 :createSession;
+        %tmp.25 = newd 3;
+        %tmp.27 = const :name;
+        symbol [ name %tmp.27 35 57 61 const ];
+        %tmp.28 = "Intervals";
+        %tmp.29 = dup %tmp.25;
+        %tmp.30 = aputv %tmp.29 %tmp.27 %tmp.28;
+        %tmp.32 = const :sport;
+        symbol [ sport %tmp.32 35 77 82 const ];
+        symbol [ Activity %tmp.34 35 84 92 ];
+        %tmp.34 = getv ? :Activity;
+        symbol [ SPORT_GRINDING %tmp.35 35 93 107 ];
+        %tmp.35 = getv %tmp.34 :SPORT_GRINDING;
+        %tmp.36 = dup %tmp.30;
+        %tmp.37 = aputv %tmp.36 %tmp.32 %tmp.35;
+        %tmp.39 = const :subSport;
+        symbol [ subSport %tmp.39 36 17 25 const ];
+        symbol [ Activity %tmp.41 36 27 35 ];
+        %tmp.41 = getv ? :Activity;
+        symbol [ SUB_SPORT_INDOOR_GRINDING %tmp.42 36 36 61 ];
+        %tmp.42 = getv %tmp.41 :SUB_SPORT_INDOOR_GRINDING;
+        %tmp.43 = dup %tmp.37;
+        %tmp.44 = aputv %tmp.43 %tmp.39 %tmp.42;
+        %tmp.45 = invoke %tmp.23 %tmp.24(%tmp.44);
+        symbol [ _session ? 35 12 20 ];
+        putv self :_session %tmp.45;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_34_43_37_8_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_34_8_37_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_34_8_37_8_if_end:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 40 8 ]
+        [ "_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_28_26_62_4_start" "_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_28_26_62_4_stop" ]
+        %store_p.1 = local;
+        symbol [ store_p %store_p.1 40 12 19 ];
+        symbol [ Storage %tmp.46 40 22 29 ];
+        %tmp.46 = getm $.Toybox.Application.Storage;
+        symbol [ getValue %tmp.47 40 30 38 ];
+        %tmp.47 = getv function %tmp.46 :getValue;
+        %tmp.48 = "pause";
+        %tmp.49 = invoke %tmp.46 %tmp.47(%tmp.48);
+        lputv %store_p.1 %tmp.49;
+        symbol [ store_p %store_p.1 40 12 19 ];
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 41 8 ]
+        [ "_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_28_26_62_4_start" "_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_28_26_62_4_stop" ]
+        %store_i.2 = local;
+        symbol [ store_i %store_i.2 41 12 19 ];
+        symbol [ Storage %tmp.50 41 22 29 ];
+        %tmp.50 = getm $.Toybox.Application.Storage;
+        symbol [ getValue %tmp.51 41 30 38 ];
+        %tmp.51 = getv function %tmp.50 :getValue;
+        %tmp.52 = "intervals";
+        %tmp.53 = invoke %tmp.50 %tmp.51(%tmp.52);
+        lputv %store_i.2 %tmp.53;
+        symbol [ store_i %store_i.2 41 12 19 ];
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 42 8 ]
+        [ "_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_28_26_62_4_start" "_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_28_26_62_4_stop" ]
+        %store_n.3 = local;
+        symbol [ store_n %store_n.3 42 12 19 ];
+        symbol [ Storage %tmp.54 42 22 29 ];
+        %tmp.54 = getm $.Toybox.Application.Storage;
+        symbol [ getValue %tmp.55 42 30 38 ];
+        %tmp.55 = getv function %tmp.54 :getValue;
+        %tmp.56 = "intervals_no";
+        %tmp.57 = invoke %tmp.54 %tmp.55(%tmp.56);
+        lputv %store_n.3 %tmp.57;
+        symbol [ store_n %store_n.3 42 12 19 ];
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 44 8 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_44_8_46_8_if_stmt:
+        %tmp.58 = lgetv %store_i.2;
+        symbol [ store_i %tmp.58 44 11 18 ];
+        %tmp.59 = null;
+        %tmp.60 = ne %tmp.58 %tmp.59;
+        bf %tmp.60 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_44_8_46_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_44_8_46_8_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_44_28_46_8_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 45 12 ]
+        %tmp.61 = lgetv %store_i.2;
+        symbol [ store_i %tmp.61 45 26 33 ];
+        %tmp.62 = as %tmp.61 { (!Null) };
+        symbol [ toNumber %tmp.63 45 34 42 ];
+        %tmp.63 = getv function %tmp.62 :toNumber;
+        %tmp.64 = invoke %tmp.62 %tmp.63();
+        symbol [ _int_length ? 45 12 23 ];
+        putv self :_int_length %tmp.64;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_44_28_46_8_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_44_8_46_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_44_8_46_8_if_end:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 48 8 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_48_8_50_8_if_stmt:
+        %tmp.65 = lgetv %store_p.1;
+        symbol [ store_p %tmp.65 48 11 18 ];
+        %tmp.66 = null;
+        %tmp.67 = ne %tmp.65 %tmp.66;
+        bf %tmp.67 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_48_8_50_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_48_8_50_8_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_48_28_50_8_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 49 12 ]
+        %tmp.68 = lgetv %store_p.1;
+        symbol [ store_p %tmp.68 49 25 32 ];
+        %tmp.69 = as %tmp.68 { (!Null) };
+        symbol [ toNumber %tmp.70 49 33 41 ];
+        %tmp.70 = getv function %tmp.69 :toNumber;
+        %tmp.71 = invoke %tmp.69 %tmp.70();
+        symbol [ _int_pause ? 49 12 22 ];
+        putv self :_int_pause %tmp.71;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_48_28_50_8_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_48_8_50_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_48_8_50_8_if_end:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 52 8 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_52_8_54_8_if_stmt:
+        %tmp.72 = lgetv %store_n.3;
+        symbol [ store_n %tmp.72 52 11 18 ];
+        %tmp.73 = null;
+        %tmp.74 = ne %tmp.72 %tmp.73;
+        bf %tmp.74 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_52_8_54_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_52_8_54_8_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_52_28_54_8_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 53 12 ]
+        %tmp.75 = lgetv %store_n.3;
+        symbol [ store_n %tmp.75 53 25 32 ];
+        %tmp.76 = as %tmp.75 { (!Null) };
+        symbol [ toNumber %tmp.77 53 33 41 ];
+        %tmp.77 = getv function %tmp.76 :toNumber;
+        %tmp.78 = invoke %tmp.76 %tmp.77();
+        symbol [ _intervals ? 53 12 22 ];
+        putv self :_intervals %tmp.78;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_52_28_54_8_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_52_8_54_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_52_8_54_8_if_end:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 56 8 ]
+        %tmp.79 = "--- bpm";
+        symbol [ _hrString ? 56 8 17 ];
+        putv self :_hrString %tmp.79;
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 59 8 ]
+        symbol [ _int_length %tmp.81 59 18 29 ];
+        %tmp.81 = getv ? :_int_length;
+        symbol [ _count1 ? 59 8 15 ];
+        putv self :_count1 %tmp.81;
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 60 8 ]
+        symbol [ _int_pause %tmp.83 60 18 28 ];
+        %tmp.83 = getv ? :_int_pause;
+        symbol [ _count2 ? 60 8 15 ];
+        putv self :_count2 %tmp.83;
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 61 8 ]
+        symbol [ _intervals %tmp.85 61 19 29 ];
+        %tmp.85 = getv ? :_intervals;
+        symbol [ _int_cnt ? 61 8 16 ];
+        putv self :_int_cnt %tmp.85;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_28_26_62_4_stop:
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 65; @symbol_functiondef = [onLayout,65,13,21]; @symbol_param<0> = [dc,65,22,24]; @symbol_param<0>_type<0> = [Dc,65,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_65_40_67_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 66 8 ]
+        %tmp.1 = self;
+        symbol [ setLayout %tmp.2 66 8 17 ];
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        symbol [ Rez %tmp.4 66 18 21 ];
+        %tmp.4 = getv ? :Rez;
+        symbol [ Layouts %tmp.5 66 22 29 ];
+        %tmp.5 = getv %tmp.4 :Layouts;
+        symbol [ MainLayout %tmp.6 66 30 40 ];
+        %tmp.6 = getv function %tmp.5 :MainLayout;
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 66 41 43 ];
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        invoke %tmp.1 %tmp.2(%tmp.8);
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_65_40_67_4_stop:
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 72; @symbol_functiondef = [onShow,72,13,19]; ]
+    function onShow() as Void {
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_72_30_89_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 73 8 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_73_8_80_8_if_stmt:
+        symbol [ _timer1 %tmp.2 73 12 19 ];
+        %tmp.2 = getv ? :_timer1;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_73_8_80_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_73_8_80_8_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_73_29_80_8_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 74 12 ]
+        symbol [ Timer %tmp.7 74 26 31 ];
+        %tmp.7 = getm $.Toybox.Timer;
+        symbol [ Timer %tmp.8 74 32 37 ];
+        %tmp.8 = getv function ? %tmp.7 :Timer;
+        %tmp.5 = newc %tmp.8 ();
+        symbol [ _timer1 ? 74 12 19 ];
+        putv self :_timer1 %tmp.5;
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 75 12 ]
+        symbol [ _timer1 %tmp.10 75 12 19 ];
+        %tmp.10 = getv ? :_timer1;
+        symbol [ start %tmp.11 75 20 25 ];
+        %tmp.11 = getv function %tmp.10 :start;
+        %tmp.12 = self;
+        symbol [ self %tmp.12 75 26 30 ];
+        symbol [ method %tmp.13 75 31 37 ];
+        %tmp.13 = getv function %tmp.12 :method;
+        %tmp.15 = const :onTimer1;
+        symbol [ onTimer1 %tmp.15 75 39 47 const ];
+        %tmp.16 = invoke %tmp.12 %tmp.13(%tmp.15);
+        %tmp.17 = 1000;
+        %tmp.18 = true;
+        invoke %tmp.10 %tmp.11(%tmp.16, %tmp.17, %tmp.18);
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 77 12 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_77_12_79_12_if_stmt:
+        symbol [ Attention %tmp.19 77 16 25 ];
+        %tmp.19 = getm $.Toybox.Attention;
+        %tmp.21 = const :vibrate;
+        symbol [ vibrate %tmp.21 77 31 38 const ];
+        %tmp.22 = canhazplz %tmp.19 %tmp.21;
+        bf %tmp.22 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_77_12_79_12_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_77_12_79_12_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_77_40_79_12_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 78 16 ]
+        symbol [ Attention %tmp.23 78 16 25 ];
+        %tmp.23 = getm $.Toybox.Attention;
+        symbol [ vibrate %tmp.24 78 26 33 ];
+        %tmp.24 = getv function %tmp.23 :vibrate;
+        symbol [ _vibeStartData %tmp.26 78 34 48 ];
+        %tmp.26 = getv ? :_vibeStartData;
+        invoke %tmp.23 %tmp.24(%tmp.26);
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_77_40_79_12_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_77_12_79_12_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_77_12_79_12_if_end:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_73_29_80_8_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_73_8_80_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_73_8_80_8_if_end:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 82 8 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_82_8_84_8_if_stmt:
+        symbol [ _timer2 %tmp.28 82 12 19 ];
+        %tmp.28 = getv ? :_timer2;
+        %tmp.29 = null;
+        %tmp.30 = eq %tmp.28 %tmp.29;
+        bf %tmp.30 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_82_8_84_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_82_8_84_8_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_82_29_84_8_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 83 12 ]
+        symbol [ Timer %tmp.33 83 26 31 ];
+        %tmp.33 = getm $.Toybox.Timer;
+        symbol [ Timer %tmp.34 83 32 37 ];
+        %tmp.34 = getv function ? %tmp.33 :Timer;
+        %tmp.31 = newc %tmp.34 ();
+        symbol [ _timer2 ? 83 12 19 ];
+        putv self :_timer2 %tmp.31;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_82_29_84_8_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_82_8_84_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_82_8_84_8_if_end:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 86 8 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_86_8_88_8_if_stmt:
+        symbol [ _session %tmp.36 86 11 19 ];
+        %tmp.36 = getv ? :_session;
+        %tmp.37 = null;
+        %tmp.38 = ne %tmp.36 %tmp.37;
+        bf %tmp.38 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_86_8_88_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_86_8_88_8_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_86_29_88_8_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 87 12 ]
+        symbol [ _session %tmp.40 87 12 20 ];
+        %tmp.40 = getv ? :_session;
+        %tmp.41 = as %tmp.40 { (!Null) };
+        symbol [ start %tmp.42 87 21 26 ];
+        %tmp.42 = getv function %tmp.41 :start;
+        invoke %tmp.41 %tmp.42();
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_86_29_88_8_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_86_8_88_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_86_8_88_8_if_end:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_72_30_89_4_stop:
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 92; @symbol_functiondef = [onUpdate,92,13,21]; @symbol_param<0> = [dc,92,22,24]; @symbol_param<0>_type<0> = [Dc,92,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_92_40_133_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 93 8 ]
+        [ "_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_92_40_133_4_start" "_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_92_40_133_4_stop" ]
+        %view_time.1 = local;
+        symbol [ view_time %view_time.1 93 12 21 ];
+        symbol [ View %tmp.2 93 24 28 ];
+        %tmp.2 = getv ? :View;
+        symbol [ findDrawableById %tmp.3 93 29 45 ];
+        %tmp.3 = getv function %tmp.2 :findDrawableById;
+        %tmp.4 = "TimeLabel";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        %tmp.6 = as %tmp.5 Text;
+        symbol [ Text %tmp.6 93 62 66 ];
+        lputv %view_time.1 %tmp.6;
+        symbol [ view_time %view_time.1 93 12 21 ];
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 94 8 ]
+        [ "_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_92_40_133_4_start" "_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_92_40_133_4_stop" ]
+        %view_status.2 = local;
+        symbol [ view_status %view_status.2 94 12 23 ];
+        symbol [ View %tmp.8 94 26 30 ];
+        %tmp.8 = getv ? :View;
+        symbol [ findDrawableById %tmp.9 94 31 47 ];
+        %tmp.9 = getv function %tmp.8 :findDrawableById;
+        %tmp.10 = "StatusLabel";
+        %tmp.11 = invoke %tmp.8 %tmp.9(%tmp.10);
+        %tmp.12 = as %tmp.11 Text;
+        symbol [ Text %tmp.12 94 66 70 ];
+        lputv %view_status.2 %tmp.12;
+        symbol [ view_status %view_status.2 94 12 23 ];
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 95 8 ]
+        [ "_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_92_40_133_4_start" "_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_92_40_133_4_stop" ]
+        %view_heart.3 = local;
+        symbol [ view_heart %view_heart.3 95 12 22 ];
+        symbol [ View %tmp.14 95 25 29 ];
+        %tmp.14 = getv ? :View;
+        symbol [ findDrawableById %tmp.15 95 30 46 ];
+        %tmp.15 = getv function %tmp.14 :findDrawableById;
+        %tmp.16 = "HeartLabel";
+        %tmp.17 = invoke %tmp.14 %tmp.15(%tmp.16);
+        %tmp.18 = as %tmp.17 Text;
+        symbol [ Text %tmp.18 95 64 68 ];
+        lputv %view_heart.3 %tmp.18;
+        symbol [ view_heart %view_heart.3 95 12 22 ];
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 96 8 ]
+        [ "_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_92_40_133_4_start" "_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_92_40_133_4_stop" ]
+        %view_counter.4 = local;
+        symbol [ view_counter %view_counter.4 96 12 24 ];
+        symbol [ View %tmp.20 96 27 31 ];
+        %tmp.20 = getv ? :View;
+        symbol [ findDrawableById %tmp.21 96 32 48 ];
+        %tmp.21 = getv function %tmp.20 :findDrawableById;
+        %tmp.22 = "CountLabel";
+        %tmp.23 = invoke %tmp.20 %tmp.21(%tmp.22);
+        %tmp.24 = as %tmp.23 Text;
+        symbol [ Text %tmp.24 96 66 70 ];
+        lputv %view_counter.4 %tmp.24;
+        symbol [ view_counter %view_counter.4 96 12 24 ];
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 100 8 ]
+        symbol [ View %tmp.26 100 8 12 ];
+        %tmp.26 = getv ? :View;
+        symbol [ onUpdate %tmp.27 100 13 21 ];
+        %tmp.27 = getv function %tmp.26 :onUpdate;
+        %tmp.28 = lgetv %dc;
+        symbol [ dc %tmp.28 100 22 24 ];
+        invoke %tmp.26 %tmp.27(%tmp.28);
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 103 8 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_103_8_110_8_if_stmt:
+        symbol [ _isTimer1 %tmp.30 103 11 20 ];
+        %tmp.30 = getv ? :_isTimer1;
+        %tmp.31 = true;
+        %tmp.32 = eq %tmp.30 %tmp.31;
+        bf %tmp.32 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_103_8_110_8_if_else_false;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_103_8_110_8_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_103_30_106_8_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 104 12 ]
+        %tmp.33 = lgetv %view_time.1;
+        symbol [ view_time %tmp.33 104 12 21 ];
+        symbol [ setText %tmp.34 104 22 29 ];
+        %tmp.34 = getv function %tmp.33 :setText;
+        symbol [ Lang %tmp.35 104 30 34 ];
+        %tmp.35 = getm $.Toybox.Lang;
+        symbol [ format %tmp.36 104 35 41 ];
+        %tmp.36 = getv function %tmp.35 :format;
+        %tmp.37 = "$1$:$2$";
+        %tmp.38 = newa 2;
+        symbol [ _count1 %tmp.40 104 55 62 ];
+        %tmp.40 = getv ? :_count1;
+        %tmp.41 = 60;
+        %tmp.42 = div %tmp.40 %tmp.41;
+        symbol [ format %tmp.43 104 67 73 ];
+        %tmp.43 = getv function %tmp.42 :format;
+        %tmp.44 = "%02d";
+        %tmp.45 = invoke %tmp.42 %tmp.43(%tmp.44);
+        %tmp.46 = dup %tmp.38;
+        %tmp.47 = aputv %tmp.46 0 %tmp.45;
+        symbol [ _count1 %tmp.49 104 84 91 ];
+        %tmp.49 = getv ? :_count1;
+        %tmp.50 = 60;
+        %tmp.51 = mod %tmp.49 %tmp.50;
+        symbol [ format %tmp.52 104 96 102 ];
+        %tmp.52 = getv function %tmp.51 :format;
+        %tmp.53 = "%02d";
+        %tmp.54 = invoke %tmp.51 %tmp.52(%tmp.53);
+        %tmp.55 = dup %tmp.47;
+        %tmp.56 = aputv %tmp.55 1 %tmp.54;
+        %tmp.57 = invoke %tmp.35 %tmp.36(%tmp.37, %tmp.56);
+        invoke %tmp.33 %tmp.34(%tmp.57);
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 105 12 ]
+        %tmp.58 = lgetv %view_status.2;
+        symbol [ view_status %tmp.58 105 12 23 ];
+        symbol [ setText %tmp.59 105 24 31 ];
+        %tmp.59 = getv function %tmp.58 :setText;
+        symbol [ Rez %tmp.61 105 32 35 ];
+        %tmp.61 = getv ? :Rez;
+        symbol [ Strings %tmp.62 105 36 43 ];
+        %tmp.62 = getv %tmp.61 :Strings;
+        symbol [ interval %tmp.63 105 44 52 ];
+        %tmp.63 = getv %tmp.62 :interval;
+        invoke %tmp.58 %tmp.59(%tmp.63);
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_103_30_106_8_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_103_8_110_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_103_8_110_8_if_else_false:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_107_13_110_8_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 108 12 ]
+        %tmp.64 = lgetv %view_time.1;
+        symbol [ view_time %tmp.64 108 12 21 ];
+        symbol [ setText %tmp.65 108 22 29 ];
+        %tmp.65 = getv function %tmp.64 :setText;
+        symbol [ Lang %tmp.66 108 30 34 ];
+        %tmp.66 = getm $.Toybox.Lang;
+        symbol [ format %tmp.67 108 35 41 ];
+        %tmp.67 = getv function %tmp.66 :format;
+        %tmp.68 = "$1$:$2$";
+        %tmp.69 = newa 2;
+        symbol [ _count2 %tmp.71 108 55 62 ];
+        %tmp.71 = getv ? :_count2;
+        %tmp.72 = 60;
+        %tmp.73 = div %tmp.71 %tmp.72;
+        symbol [ format %tmp.74 108 67 73 ];
+        %tmp.74 = getv function %tmp.73 :format;
+        %tmp.75 = "%02d";
+        %tmp.76 = invoke %tmp.73 %tmp.74(%tmp.75);
+        %tmp.77 = dup %tmp.69;
+        %tmp.78 = aputv %tmp.77 0 %tmp.76;
+        symbol [ _count2 %tmp.80 108 84 91 ];
+        %tmp.80 = getv ? :_count2;
+        %tmp.81 = 60;
+        %tmp.82 = mod %tmp.80 %tmp.81;
+        symbol [ format %tmp.83 108 96 102 ];
+        %tmp.83 = getv function %tmp.82 :format;
+        %tmp.84 = "%02d";
+        %tmp.85 = invoke %tmp.82 %tmp.83(%tmp.84);
+        %tmp.86 = dup %tmp.78;
+        %tmp.87 = aputv %tmp.86 1 %tmp.85;
+        %tmp.88 = invoke %tmp.66 %tmp.67(%tmp.68, %tmp.87);
+        invoke %tmp.64 %tmp.65(%tmp.88);
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 109 12 ]
+        %tmp.89 = lgetv %view_status.2;
+        symbol [ view_status %tmp.89 109 12 23 ];
+        symbol [ setText %tmp.90 109 24 31 ];
+        %tmp.90 = getv function %tmp.89 :setText;
+        symbol [ Rez %tmp.92 109 32 35 ];
+        %tmp.92 = getv ? :Rez;
+        symbol [ Strings %tmp.93 109 36 43 ];
+        %tmp.93 = getv %tmp.92 :Strings;
+        symbol [ int_pause %tmp.94 109 44 53 ];
+        %tmp.94 = getv %tmp.93 :int_pause;
+        invoke %tmp.89 %tmp.90(%tmp.94);
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_107_13_110_8_stop:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_103_8_110_8_if_end:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 113 8 ]
+        %tmp.95 = lgetv %view_heart.3;
+        symbol [ view_heart %tmp.95 113 8 18 ];
+        symbol [ setText %tmp.96 113 19 26 ];
+        %tmp.96 = getv function %tmp.95 :setText;
+        symbol [ _hrString %tmp.98 113 27 36 ];
+        %tmp.98 = getv ? :_hrString;
+        invoke %tmp.95 %tmp.96(%tmp.98);
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 116 8 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_116_8_121_8_if_stmt:
+        symbol [ _int_cnt %tmp.100 116 11 19 ];
+        %tmp.100 = getv ? :_int_cnt;
+        symbol [ _intervals %tmp.102 116 22 32 ];
+        %tmp.102 = getv ? :_intervals;
+        %tmp.103 = lt %tmp.100 %tmp.102;
+        bf %tmp.103 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_116_8_121_8_if_else_false;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_116_8_121_8_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_116_34_118_8_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 117 12 ]
+        %tmp.104 = lgetv %view_counter.4;
+        symbol [ view_counter %tmp.104 117 12 24 ];
+        symbol [ setText %tmp.105 117 25 32 ];
+        %tmp.105 = getv function %tmp.104 :setText;
+        symbol [ _int_cnt %tmp.107 117 33 41 ];
+        %tmp.107 = getv ? :_int_cnt;
+        symbol [ toString %tmp.108 117 42 50 ];
+        %tmp.108 = getv function %tmp.107 :toString;
+        %tmp.109 = invoke %tmp.107 %tmp.108();
+        invoke %tmp.104 %tmp.105(%tmp.109);
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_116_34_118_8_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_116_8_121_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_116_8_121_8_if_else_false:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_119_13_121_8_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 120 12 ]
+        %tmp.110 = lgetv %view_counter.4;
+        symbol [ view_counter %tmp.110 120 12 24 ];
+        symbol [ setText %tmp.111 120 25 32 ];
+        %tmp.111 = getv function %tmp.110 :setText;
+        symbol [ _intervals %tmp.113 120 33 43 ];
+        %tmp.113 = getv ? :_intervals;
+        symbol [ toString %tmp.114 120 44 52 ];
+        %tmp.114 = getv function %tmp.113 :toString;
+        %tmp.115 = invoke %tmp.113 %tmp.114();
+        invoke %tmp.110 %tmp.111(%tmp.115);
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_119_13_121_8_stop:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_116_8_121_8_if_end:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 124 8 ]
+        %tmp.116 = lgetv %dc;
+        symbol [ dc %tmp.116 124 8 10 ];
+        symbol [ setColor %tmp.117 124 11 19 ];
+        %tmp.117 = getv function %tmp.116 :setColor;
+        symbol [ Graphics %tmp.118 124 20 28 ];
+        %tmp.118 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.119 124 29 40 ];
+        %tmp.119 = getv %tmp.118 :COLOR_WHITE;
+        symbol [ Graphics %tmp.120 124 42 50 ];
+        %tmp.120 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.121 124 51 68 ];
+        %tmp.121 = getv %tmp.120 :COLOR_TRANSPARENT;
+        invoke %tmp.116 %tmp.117(%tmp.119, %tmp.121);
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 125 8 ]
+        %tmp.122 = lgetv %dc;
+        symbol [ dc %tmp.122 125 8 10 ];
+        symbol [ setPenWidth %tmp.123 125 11 22 ];
+        %tmp.123 = getv function %tmp.122 :setPenWidth;
+        %tmp.124 = 6;
+        invoke %tmp.122 %tmp.123(%tmp.124);
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 127 8 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_127_8_132_8_if_stmt:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_127_11_127_49_begin:
+        symbol [ _count1 %tmp.126 127 11 18 ];
+        %tmp.126 = getv ? :_count1;
+        symbol [ _int_length %tmp.128 127 21 32 ];
+        %tmp.128 = getv ? :_int_length;
+        %tmp.129 = lt %tmp.126 %tmp.128;
+        bf %tmp.129 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_127_8_132_8_if_false;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_127_36_127_49_true:
+        symbol [ _isTimer1 %tmp.131 127 36 45 ];
+        %tmp.131 = getv ? :_isTimer1;
+        %tmp.132 = true;
+        %tmp.133 = eq %tmp.131 %tmp.132;
+        push %tmp.133;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_127_36_127_49_end:
+        %tmp.134 = phi [%tmp.129 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_127_11_127_49_begin] [%tmp.133 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_127_36_127_49_true] [%tmp.134 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_127_36_127_49_end];
+        bf %tmp.134 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_127_8_132_8_if_false;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_127_8_132_8_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_127_55_129_8_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 128 12 ]
+        %tmp.135 = lgetv %dc;
+        symbol [ dc %tmp.135 128 12 14 ];
+        symbol [ drawArc %tmp.136 128 15 22 ];
+        %tmp.136 = getv function %tmp.135 :drawArc;
+        %tmp.137 = 144;
+        %tmp.138 = 31;
+        symbol [ _radius %tmp.140 128 32 39 ];
+        %tmp.140 = getv ? :_radius;
+        symbol [ Graphics %tmp.141 128 41 49 ];
+        %tmp.141 = getm $.Toybox.Graphics;
+        symbol [ ARC_COUNTER_CLOCKWISE %tmp.142 128 50 71 ];
+        %tmp.142 = getv %tmp.141 :ARC_COUNTER_CLOCKWISE;
+        %tmp.143 = 0;
+        symbol [ Math %tmp.145 128 76 80 ];
+        %tmp.145 = getv ? :Math;
+        symbol [ round %tmp.146 128 81 86 ];
+        %tmp.146 = getv function %tmp.145 :round;
+        %tmp.147 = 360;
+        symbol [ _int_length %tmp.149 128 92 103 ];
+        %tmp.149 = getv ? :_int_length;
+        %tmp.150 = div %tmp.147 %tmp.149;
+        symbol [ _count1 %tmp.152 128 106 113 ];
+        %tmp.152 = getv ? :_count1;
+        %tmp.153 = mul %tmp.150 %tmp.152;
+        %tmp.154 = invoke %tmp.145 %tmp.146(%tmp.153);
+        symbol [ toNumber %tmp.155 128 116 124 ];
+        %tmp.155 = getv function %tmp.154 :toNumber;
+        %tmp.156 = invoke %tmp.154 %tmp.155();
+        invoke %tmp.135 %tmp.136(%tmp.137, %tmp.138, %tmp.140, %tmp.142, %tmp.143, %tmp.156);
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_127_55_129_8_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_127_8_132_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_127_8_132_8_if_false:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 130 13 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_130_13_132_8_if_stmt:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_130_16_130_53_begin:
+        symbol [ _count2 %tmp.158 130 16 23 ];
+        %tmp.158 = getv ? :_count2;
+        symbol [ _int_pause %tmp.160 130 26 36 ];
+        %tmp.160 = getv ? :_int_pause;
+        %tmp.161 = lt %tmp.158 %tmp.160;
+        bf %tmp.161 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_130_13_132_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_130_40_130_53_true:
+        symbol [ _isTimer1 %tmp.163 130 40 49 ];
+        %tmp.163 = getv ? :_isTimer1;
+        %tmp.164 = false;
+        %tmp.165 = eq %tmp.163 %tmp.164;
+        push %tmp.165;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_130_40_130_53_end:
+        %tmp.166 = phi [%tmp.161 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_130_16_130_53_begin] [%tmp.165 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_130_40_130_53_true] [%tmp.166 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_130_40_130_53_end];
+        bf %tmp.166 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_130_13_132_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_130_13_132_8_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_130_60_132_8_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 131 12 ]
+        %tmp.167 = lgetv %dc;
+        symbol [ dc %tmp.167 131 12 14 ];
+        symbol [ drawArc %tmp.168 131 15 22 ];
+        %tmp.168 = getv function %tmp.167 :drawArc;
+        %tmp.169 = 144;
+        %tmp.170 = 31;
+        symbol [ _radius %tmp.172 131 32 39 ];
+        %tmp.172 = getv ? :_radius;
+        symbol [ Graphics %tmp.173 131 41 49 ];
+        %tmp.173 = getm $.Toybox.Graphics;
+        symbol [ ARC_COUNTER_CLOCKWISE %tmp.174 131 50 71 ];
+        %tmp.174 = getv %tmp.173 :ARC_COUNTER_CLOCKWISE;
+        %tmp.175 = 0;
+        symbol [ Math %tmp.177 131 76 80 ];
+        %tmp.177 = getv ? :Math;
+        symbol [ round %tmp.178 131 81 86 ];
+        %tmp.178 = getv function %tmp.177 :round;
+        %tmp.179 = 360;
+        symbol [ _int_pause %tmp.181 131 92 102 ];
+        %tmp.181 = getv ? :_int_pause;
+        %tmp.182 = div %tmp.179 %tmp.181;
+        symbol [ _count2 %tmp.184 131 105 112 ];
+        %tmp.184 = getv ? :_count2;
+        %tmp.185 = mul %tmp.182 %tmp.184;
+        %tmp.186 = invoke %tmp.177 %tmp.178(%tmp.185);
+        symbol [ toNumber %tmp.187 131 115 123 ];
+        %tmp.187 = getv function %tmp.186 :toNumber;
+        %tmp.188 = invoke %tmp.186 %tmp.187();
+        invoke %tmp.167 %tmp.168(%tmp.169, %tmp.170, %tmp.172, %tmp.174, %tmp.175, %tmp.188);
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_130_60_132_8_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_130_13_132_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_130_13_132_8_if_end:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_127_8_132_8_if_end:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_92_40_133_4_stop:
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 138; @symbol_functiondef = [onHide,138,13,19]; ]
+    function onHide() as Void {
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_138_30_157_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 139 8 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_139_8_142_8_if_stmt:
+        symbol [ _timer1 %tmp.2 139 12 19 ];
+        %tmp.2 = getv ? :_timer1;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_139_8_142_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_139_8_142_8_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_139_29_142_8_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 140 12 ]
+        symbol [ _timer1 %tmp.6 140 12 19 ];
+        %tmp.6 = getv ? :_timer1;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        symbol [ stop %tmp.8 140 20 24 ];
+        %tmp.8 = getv function %tmp.7 :stop;
+        invoke %tmp.7 %tmp.8();
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 141 12 ]
+        %tmp.9 = null;
+        symbol [ _timer1 ? 141 12 19 ];
+        putv self :_timer1 %tmp.9;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_139_29_142_8_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_139_8_142_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_139_8_142_8_if_end:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 143 8 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_143_8_146_8_if_stmt:
+        symbol [ _timer2 %tmp.11 143 12 19 ];
+        %tmp.11 = getv ? :_timer2;
+        %tmp.12 = null;
+        %tmp.13 = ne %tmp.11 %tmp.12;
+        bf %tmp.13 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_143_8_146_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_143_8_146_8_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_143_29_146_8_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 144 12 ]
+        symbol [ _timer2 %tmp.15 144 12 19 ];
+        %tmp.15 = getv ? :_timer2;
+        %tmp.16 = as %tmp.15 { (!Null) };
+        symbol [ stop %tmp.17 144 20 24 ];
+        %tmp.17 = getv function %tmp.16 :stop;
+        invoke %tmp.16 %tmp.17();
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 145 12 ]
+        %tmp.18 = null;
+        symbol [ _timer2 ? 145 12 19 ];
+        putv self :_timer2 %tmp.18;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_143_29_146_8_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_143_8_146_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_143_8_146_8_if_end:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 148 8 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_148_8_150_8_if_stmt:
+        symbol [ _session %tmp.20 148 11 19 ];
+        %tmp.20 = getv ? :_session;
+        %tmp.21 = null;
+        %tmp.22 = ne %tmp.20 %tmp.21;
+        bf %tmp.22 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_148_8_150_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_148_8_150_8_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_148_29_150_8_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 149 12 ]
+        symbol [ _session %tmp.24 149 12 20 ];
+        %tmp.24 = getv ? :_session;
+        %tmp.25 = as %tmp.24 { (!Null) };
+        symbol [ stop %tmp.26 149 21 25 ];
+        %tmp.26 = getv function %tmp.25 :stop;
+        invoke %tmp.25 %tmp.26();
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_148_29_150_8_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_148_8_150_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_148_8_150_8_if_end:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 152 8 ]
+        %tmp.27 = true;
+        symbol [ _isTimer1 ? 152 8 17 ];
+        putv self :_isTimer1 %tmp.27;
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 154 8 ]
+        symbol [ _int_length %tmp.29 154 18 29 ];
+        %tmp.29 = getv ? :_int_length;
+        symbol [ _count1 ? 154 8 15 ];
+        putv self :_count1 %tmp.29;
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 155 8 ]
+        symbol [ _int_pause %tmp.31 155 18 28 ];
+        %tmp.31 = getv ? :_int_pause;
+        symbol [ _count2 ? 155 8 15 ];
+        putv self :_count2 %tmp.31;
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 156 8 ]
+        symbol [ _intervals %tmp.33 156 19 29 ];
+        %tmp.33 = getv ? :_intervals;
+        symbol [ _int_cnt ? 156 8 16 ];
+        putv self :_int_cnt %tmp.33;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_138_30_157_4_stop:
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 160; @symbol_functiondef = [onTimer1,160,13,21]; ]
+    function onTimer1() as Void {
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_160_32_179_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 161 8 ]
+        symbol [ _count1 %tmp.3 161 8 15 ];
+        %tmp.3 = getv ? :_count1;
+        %tmp.4 = sub %tmp.3 1;
+        symbol [ _count1 ? 161 8 15 ];
+        putv self :_count1 dup %tmp.4;
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 164 8 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_164_8_176_8_if_stmt:
+        symbol [ _count1 %tmp.6 164 11 18 ];
+        %tmp.6 = getv ? :_count1;
+        %tmp.7 = 0;
+        %tmp.8 = lte %tmp.6 %tmp.7;
+        bf %tmp.8 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_164_8_176_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_164_8_176_8_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_164_25_176_8_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 165 12 ]
+        symbol [ _int_length %tmp.10 165 22 33 ];
+        %tmp.10 = getv ? :_int_length;
+        symbol [ _count1 ? 165 12 19 ];
+        putv self :_count1 %tmp.10;
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 166 12 ]
+        %tmp.11 = false;
+        symbol [ _isTimer1 ? 166 12 21 ];
+        putv self :_isTimer1 %tmp.11;
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 168 12 ]
+        symbol [ _timer1 %tmp.13 168 12 19 ];
+        %tmp.13 = getv ? :_timer1;
+        symbol [ stop %tmp.14 168 20 24 ];
+        %tmp.14 = getv function %tmp.13 :stop;
+        invoke %tmp.13 %tmp.14();
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 169 12 ]
+        symbol [ _timer2 %tmp.16 169 12 19 ];
+        %tmp.16 = getv ? :_timer2;
+        symbol [ start %tmp.17 169 20 25 ];
+        %tmp.17 = getv function %tmp.16 :start;
+        %tmp.18 = self;
+        symbol [ self %tmp.18 169 26 30 ];
+        symbol [ method %tmp.19 169 31 37 ];
+        %tmp.19 = getv function %tmp.18 :method;
+        %tmp.21 = const :onTimer2;
+        symbol [ onTimer2 %tmp.21 169 39 47 const ];
+        %tmp.22 = invoke %tmp.18 %tmp.19(%tmp.21);
+        %tmp.23 = 1000;
+        %tmp.24 = true;
+        invoke %tmp.16 %tmp.17(%tmp.22, %tmp.23, %tmp.24);
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 172 12 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_172_12_174_12_if_stmt:
+        symbol [ Attention %tmp.25 172 16 25 ];
+        %tmp.25 = getm $.Toybox.Attention;
+        %tmp.27 = const :vibrate;
+        symbol [ vibrate %tmp.27 172 31 38 const ];
+        %tmp.28 = canhazplz %tmp.25 %tmp.27;
+        bf %tmp.28 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_172_12_174_12_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_172_12_174_12_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_172_40_174_12_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 173 16 ]
+        symbol [ Attention %tmp.29 173 16 25 ];
+        %tmp.29 = getm $.Toybox.Attention;
+        symbol [ vibrate %tmp.30 173 26 33 ];
+        %tmp.30 = getv function %tmp.29 :vibrate;
+        symbol [ _vibeStartData %tmp.32 173 34 48 ];
+        %tmp.32 = getv ? :_vibeStartData;
+        invoke %tmp.29 %tmp.30(%tmp.32);
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_172_40_174_12_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_172_12_174_12_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_172_12_174_12_if_end:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_164_25_176_8_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_164_8_176_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_164_8_176_8_if_end:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 178 8 ]
+        symbol [ WatchUi %tmp.33 178 8 15 ];
+        %tmp.33 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.34 178 16 29 ];
+        %tmp.34 = getv function %tmp.33 :requestUpdate;
+        invoke %tmp.33 %tmp.34();
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_160_32_179_4_stop:
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 182; @symbol_functiondef = [onTimer2,182,13,21]; ]
+    function onTimer2() as Void {
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_182_32_224_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 183 8 ]
+        symbol [ _count2 %tmp.3 183 8 15 ];
+        %tmp.3 = getv ? :_count2;
+        %tmp.4 = sub %tmp.3 1;
+        symbol [ _count2 ? 183 8 15 ];
+        putv self :_count2 dup %tmp.4;
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 186 8 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_186_8_221_8_if_stmt:
+        symbol [ _count2 %tmp.6 186 11 18 ];
+        %tmp.6 = getv ? :_count2;
+        %tmp.7 = 0;
+        %tmp.8 = lte %tmp.6 %tmp.7;
+        bf %tmp.8 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_186_8_221_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_186_8_221_8_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_186_25_221_8_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 187 12 ]
+        symbol [ _int_cnt %tmp.11 187 12 20 ];
+        %tmp.11 = getv ? :_int_cnt;
+        %tmp.12 = sub %tmp.11 1;
+        symbol [ _int_cnt ? 187 12 20 ];
+        putv self :_int_cnt dup %tmp.12;
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 188 12 ]
+        symbol [ _int_pause %tmp.14 188 22 32 ];
+        %tmp.14 = getv ? :_int_pause;
+        symbol [ _count2 ? 188 12 19 ];
+        putv self :_count2 %tmp.14;
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 189 12 ]
+        %tmp.15 = true;
+        symbol [ _isTimer1 ? 189 12 21 ];
+        putv self :_isTimer1 %tmp.15;
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 191 12 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_191_12_220_12_if_stmt:
+        symbol [ _int_cnt %tmp.17 191 15 23 ];
+        %tmp.17 = getv ? :_int_cnt;
+        %tmp.18 = 0;
+        %tmp.19 = lte %tmp.17 %tmp.18;
+        bf %tmp.19 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_191_12_220_12_if_else_false;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_191_12_220_12_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_191_30_211_12_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 192 16 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_192_16_194_16_if_stmt:
+        symbol [ _timer1 %tmp.21 192 20 27 ];
+        %tmp.21 = getv ? :_timer1;
+        %tmp.22 = null;
+        %tmp.23 = ne %tmp.21 %tmp.22;
+        bf %tmp.23 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_192_16_194_16_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_192_16_194_16_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_192_37_194_16_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 193 20 ]
+        symbol [ _timer1 %tmp.25 193 20 27 ];
+        %tmp.25 = getv ? :_timer1;
+        %tmp.26 = as %tmp.25 { (!Null) };
+        symbol [ stop %tmp.27 193 28 32 ];
+        %tmp.27 = getv function %tmp.26 :stop;
+        invoke %tmp.26 %tmp.27();
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_192_37_194_16_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_192_16_194_16_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_192_16_194_16_if_end:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 196 16 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_196_16_198_16_if_stmt:
+        symbol [ _timer2 %tmp.29 196 20 27 ];
+        %tmp.29 = getv ? :_timer2;
+        %tmp.30 = null;
+        %tmp.31 = ne %tmp.29 %tmp.30;
+        bf %tmp.31 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_196_16_198_16_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_196_16_198_16_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_196_37_198_16_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 197 20 ]
+        symbol [ _timer2 %tmp.33 197 20 27 ];
+        %tmp.33 = getv ? :_timer2;
+        %tmp.34 = as %tmp.33 { (!Null) };
+        symbol [ stop %tmp.35 197 28 32 ];
+        %tmp.35 = getv function %tmp.34 :stop;
+        invoke %tmp.34 %tmp.35();
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_196_37_198_16_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_196_16_198_16_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_196_16_198_16_if_end:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 200 16 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_200_16_202_16_if_stmt:
+        symbol [ Attention %tmp.36 200 20 29 ];
+        %tmp.36 = getm $.Toybox.Attention;
+        %tmp.38 = const :vibrate;
+        symbol [ vibrate %tmp.38 200 35 42 const ];
+        %tmp.39 = canhazplz %tmp.36 %tmp.38;
+        bf %tmp.39 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_200_16_202_16_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_200_16_202_16_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_200_44_202_16_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 201 20 ]
+        symbol [ Attention %tmp.40 201 20 29 ];
+        %tmp.40 = getm $.Toybox.Attention;
+        symbol [ vibrate %tmp.41 201 30 37 ];
+        %tmp.41 = getv function %tmp.40 :vibrate;
+        symbol [ _vibeEndData %tmp.43 201 38 50 ];
+        %tmp.43 = getv ? :_vibeEndData;
+        invoke %tmp.40 %tmp.41(%tmp.43);
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_200_44_202_16_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_200_16_202_16_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_200_16_202_16_if_end:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 208 16 ]
+        [ "_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_191_30_211_12_start" "_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_191_30_211_12_stop" ]
+        %view.1 = local;
+        symbol [ view %view.1 208 20 24 ];
+        symbol [ SaveIntervalsView %tmp.47 208 31 48 ];
+        %tmp.47 = getv ? :SaveIntervalsView;
+        symbol [ _session %tmp.49 208 49 57 ];
+        %tmp.49 = getv ? :_session;
+        %tmp.44 = newc %tmp.47 (%tmp.49);
+        lputv %view.1 %tmp.44;
+        symbol [ view %view.1 208 20 24 ];
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 209 16 ]
+        [ "_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_191_30_211_12_start" "_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_191_30_211_12_stop" ]
+        %del.2 = local;
+        symbol [ del %del.2 209 20 23 ];
+        symbol [ SaveIntervalsDelegate %tmp.53 209 30 51 ];
+        %tmp.53 = getv ? :SaveIntervalsDelegate;
+        %tmp.54 = lgetv %view.1;
+        symbol [ view %tmp.54 209 52 56 ];
+        %tmp.50 = newc %tmp.53 (%tmp.54);
+        lputv %del.2 %tmp.50;
+        symbol [ del %del.2 209 20 23 ];
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 210 16 ]
+        symbol [ WatchUi %tmp.55 210 16 23 ];
+        %tmp.55 = getm $.Toybox.WatchUi;
+        symbol [ switchToView %tmp.56 210 24 36 ];
+        %tmp.56 = getv function %tmp.55 :switchToView;
+        %tmp.57 = lgetv %view.1;
+        symbol [ view %tmp.57 210 37 41 ];
+        %tmp.58 = lgetv %del.2;
+        symbol [ del %tmp.58 210 43 46 ];
+        symbol [ WatchUi %tmp.59 210 48 55 ];
+        %tmp.59 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_DOWN %tmp.60 210 56 66 ];
+        %tmp.60 = getv %tmp.59 :SLIDE_DOWN;
+        invoke %tmp.55 %tmp.56(%tmp.57, %tmp.58, %tmp.60);
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_191_30_211_12_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_191_12_220_12_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_191_12_220_12_if_else_false:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_212_17_220_12_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 213 16 ]
+        symbol [ _timer2 %tmp.62 213 16 23 ];
+        %tmp.62 = getv ? :_timer2;
+        symbol [ stop %tmp.63 213 24 28 ];
+        %tmp.63 = getv function %tmp.62 :stop;
+        invoke %tmp.62 %tmp.63();
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 214 16 ]
+        symbol [ _timer1 %tmp.65 214 16 23 ];
+        %tmp.65 = getv ? :_timer1;
+        symbol [ start %tmp.66 214 24 29 ];
+        %tmp.66 = getv function %tmp.65 :start;
+        %tmp.67 = self;
+        symbol [ self %tmp.67 214 30 34 ];
+        symbol [ method %tmp.68 214 35 41 ];
+        %tmp.68 = getv function %tmp.67 :method;
+        %tmp.70 = const :onTimer1;
+        symbol [ onTimer1 %tmp.70 214 43 51 const ];
+        %tmp.71 = invoke %tmp.67 %tmp.68(%tmp.70);
+        %tmp.72 = 1000;
+        %tmp.73 = true;
+        invoke %tmp.65 %tmp.66(%tmp.71, %tmp.72, %tmp.73);
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 217 16 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_217_16_219_16_if_stmt:
+        symbol [ Attention %tmp.74 217 20 29 ];
+        %tmp.74 = getm $.Toybox.Attention;
+        %tmp.76 = const :vibrate;
+        symbol [ vibrate %tmp.76 217 35 42 const ];
+        %tmp.77 = canhazplz %tmp.74 %tmp.76;
+        bf %tmp.77 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_217_16_219_16_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_217_16_219_16_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_217_44_219_16_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 218 20 ]
+        symbol [ Attention %tmp.78 218 20 29 ];
+        %tmp.78 = getm $.Toybox.Attention;
+        symbol [ vibrate %tmp.79 218 30 37 ];
+        %tmp.79 = getv function %tmp.78 :vibrate;
+        symbol [ _vibeStartData %tmp.81 218 38 52 ];
+        %tmp.81 = getv ? :_vibeStartData;
+        invoke %tmp.78 %tmp.79(%tmp.81);
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_217_44_219_16_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_217_16_219_16_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_217_16_219_16_if_end:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_212_17_220_12_stop:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_191_12_220_12_if_end:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_186_25_221_8_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_186_8_221_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_186_8_221_8_if_end:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 223 8 ]
+        symbol [ WatchUi %tmp.82 223 8 15 ];
+        %tmp.82 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.83 223 16 29 ];
+        %tmp.83 = getv function %tmp.82 :requestUpdate;
+        invoke %tmp.82 %tmp.83();
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_182_32_224_4_stop:
+    }
+    //! Handle sensor updates
+    //! @param sensorInfo Updated sensor data
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 228; @symbol_functiondef = [onSnsr,228,20,26]; @symbol_param<0> = [sensorInfo,228,27,37]; @symbol_param<0>_type<0> = [Info,228,41,45]; ]
+    public
+    function onSnsr(sensorInfo as Info) as Void {
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_228_55_239_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 229 8 ]
+        [ "_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_228_55_239_4_start" "_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_228_55_239_4_stop" ]
+        %heartRate.1 = local;
+        symbol [ heartRate %heartRate.1 229 12 21 ];
+        %tmp.1 = lgetv %sensorInfo;
+        symbol [ sensorInfo %tmp.1 229 24 34 ];
+        symbol [ heartRate %tmp.2 229 35 44 ];
+        %tmp.2 = getv %tmp.1 :heartRate;
+        lputv %heartRate.1 %tmp.2;
+        symbol [ heartRate %heartRate.1 229 12 21 ];
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 231 8 ]
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_231_8_236_8_if_stmt:
+        %tmp.3 = lgetv %heartRate.1;
+        symbol [ heartRate %tmp.3 231 12 21 ];
+        %tmp.4 = null;
+        %tmp.5 = ne %tmp.3 %tmp.4;
+        bf %tmp.5 @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_231_8_236_8_if_else_false;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_231_8_236_8_if_true:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_231_31_233_8_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 232 12 ]
+        %tmp.6 = lgetv %heartRate.1;
+        symbol [ heartRate %tmp.6 232 24 33 ];
+        %tmp.7 = as %tmp.6 { (!Null) };
+        symbol [ toString %tmp.8 232 34 42 ];
+        %tmp.8 = getv function %tmp.7 :toString;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        %tmp.10 = " bpm";
+        %tmp.11 = add %tmp.9 %tmp.10;
+        symbol [ _hrString ? 232 12 21 ];
+        putv self :_hrString %tmp.11;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_231_31_233_8_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_231_8_236_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_231_8_236_8_if_else_false:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_234_13_236_8_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 235 12 ]
+        %tmp.12 = "--- bpm";
+        symbol [ _hrString ? 235 12 21 ];
+        putv self :_hrString %tmp.12;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_234_13_236_8_stop:
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_231_8_236_8_if_end:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc" 238 8 ]
+        symbol [ WatchUi %tmp.13 238 8 15 ];
+        %tmp.13 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.14 238 16 29 ];
+        %tmp.14 = getv function %tmp.13 :requestUpdate;
+        invoke %tmp.13 %tmp.14();
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsView_mc_228_55_239_4_stop:
+    }
+}
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsView.mc"; @line = 1; ]
+<init> {
+}

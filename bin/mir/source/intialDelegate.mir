@@ -1,0 +1,102 @@
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc"; @line = 4; @symbol_classdef = [initialIntervalsDelegate,4,6,30]; @symbol_extends<0> = [WatchUi,4,39,46]; @symbol_extends<1> = [BehaviorDelegate,4,47,63]; ]
+class initialIntervalsDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc"; @line = 6; @symbol_functiondef = [initialize,6,13,23]; ]
+    function initialize() as Void {
+_home_avl_data_src_garmin_intervals_intervals_source_intialDelegate_mc_6_26_8_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc" 7 8 ]
+        symbol [ BehaviorDelegate %tmp.2 7 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 7 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_home_avl_data_src_garmin_intervals_intervals_source_intialDelegate_mc_6_26_8_4_stop:
+    }
+    //! On a select event, start the intervals
+    //! @return true if handled, false otherwise
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc"; @line = 12; @symbol_functiondef = [onSelect,12,20,28]; @symbol_return<0> = [Boolean,12,34,41]; ]
+    public
+    function onSelect() as Boolean {
+_home_avl_data_src_garmin_intervals_intervals_source_intialDelegate_mc_12_42_15_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc" 13 8 ]
+        symbol [ WatchUi %tmp.1 13 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.2 13 16 24 ];
+        %tmp.2 = getv function %tmp.1 :pushView;
+        symbol [ intervalsView %tmp.6 13 29 42 ];
+        %tmp.6 = getv ? :intervalsView;
+        %tmp.3 = newc %tmp.6 ();
+        %tmp.7 = null;
+        symbol [ WatchUi %tmp.8 13 52 59 ];
+        %tmp.8 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_DOWN %tmp.9 13 60 70 ];
+        %tmp.9 = getv %tmp.8 :SLIDE_DOWN;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.7, %tmp.9);
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc" 14 8 ]
+        %tmp.10 = true;
+        ret %tmp.10;
+_home_avl_data_src_garmin_intervals_intervals_source_intialDelegate_mc_12_42_15_4_stop:
+    }
+    //! Handle back behavior
+    //! @return true if handled, false otherwise
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc"; @line = 19; @symbol_functiondef = [onBack,19,20,26]; @symbol_return<0> = [Boolean,19,32,39]; ]
+    public
+    function onBack() as Boolean {
+_home_avl_data_src_garmin_intervals_intervals_source_intialDelegate_mc_19_40_22_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc" 20 8 ]
+        symbol [ WatchUi %tmp.1 20 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.2 20 16 23 ];
+        %tmp.2 = getv function %tmp.1 :popView;
+        symbol [ WatchUi %tmp.3 20 24 31 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_UP %tmp.4 20 32 40 ];
+        %tmp.4 = getv %tmp.3 :SLIDE_UP;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc" 21 8 ]
+        %tmp.5 = true;
+        ret %tmp.5;
+_home_avl_data_src_garmin_intervals_intervals_source_intialDelegate_mc_19_40_22_4_stop:
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc"; @line = 24; @symbol_functiondef = [onMenu,24,13,19]; @symbol_return<0> = [Boolean,24,25,32]; ]
+    function onMenu() as Boolean {
+_home_avl_data_src_garmin_intervals_intervals_source_intialDelegate_mc_24_33_27_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc" 25 8 ]
+        symbol [ WatchUi %tmp.1 25 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.2 25 16 24 ];
+        %tmp.2 = getv function %tmp.1 :pushView;
+        symbol [ Rez %tmp.6 25 29 32 ];
+        %tmp.6 = getv ? :Rez;
+        symbol [ Menus %tmp.7 25 33 38 ];
+        %tmp.7 = getv %tmp.6 :Menus;
+        symbol [ MainMenu %tmp.8 25 39 47 ];
+        %tmp.8 = getv function ? %tmp.7 :MainMenu;
+        %tmp.3 = newc %tmp.8 ();
+        symbol [ intervalsMenuDelegate %tmp.12 25 55 76 ];
+        %tmp.12 = getv ? :intervalsMenuDelegate;
+        %tmp.9 = newc %tmp.12 ();
+        symbol [ WatchUi %tmp.13 25 80 87 ];
+        %tmp.13 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_UP %tmp.14 25 88 96 ];
+        %tmp.14 = getv %tmp.13 :SLIDE_UP;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.9, %tmp.14);
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc" 26 8 ]
+        %tmp.15 = true;
+        ret %tmp.15;
+_home_avl_data_src_garmin_intervals_intervals_source_intialDelegate_mc_24_33_27_4_stop:
+    }
+}
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intialDelegate.mc"; @line = 1; ]
+<init> {
+}

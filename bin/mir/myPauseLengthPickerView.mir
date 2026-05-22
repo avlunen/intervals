@@ -1,0 +1,183 @@
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Graphics,3,14,22]; ]
+import Toybox.Graphics;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Application,4,14,25]; @symbol_importdef<2> = [Properties,4,26,36]; ]
+import Toybox.Application.Properties;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Application,5,14,25]; @symbol_importdef<2> = [Storage,5,26,33]; ]
+import Toybox.Application.Storage;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc"; @line = 7; @symbol_classdef = [MyIntervalLengthPickerView,7,6,32]; @symbol_extends<0> = [WatchUi,7,41,48]; @symbol_extends<1> = [View,7,49,53]; ]
+class MyIntervalLengthPickerView extends WatchUi.View {
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc"; @line = 8; @position = 16; @symbol_vardef = [myValue,8,16,23]; @symbol_type<0> = [Number,8,27,33]; ]
+    private
+    var myValue as Number = 0;
+    //! Constructor
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc"; @line = 11; @symbol_functiondef = [initialize,11,20,30]; ]
+    public
+    function initialize() as Void {
+_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_11_33_23_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc" 12 8 ]
+        symbol [ View %tmp.2 12 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 12 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc" 14 8 ]
+        [ "_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_11_33_23_4_start" "_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_11_33_23_4_stop" ]
+        %store.1 = local;
+        symbol [ store %store.1 14 12 17 ];
+        symbol [ Storage %tmp.4 14 20 27 ];
+        %tmp.4 = getm $.Toybox.Application.Storage;
+        symbol [ getValue %tmp.5 14 28 36 ];
+        %tmp.5 = getv function %tmp.4 :getValue;
+        %tmp.6 = "intervals";
+        %tmp.7 = invoke %tmp.4 %tmp.5(%tmp.6);
+        lputv %store.1 %tmp.7;
+        symbol [ store %store.1 14 12 17 ];
+[ "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc" 16 8 ]
+_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_16_8_21_8_if_stmt:
+        %tmp.8 = lgetv %store.1;
+        symbol [ store %tmp.8 16 11 16 ];
+        %tmp.9 = null;
+        %tmp.10 = eq %tmp.8 %tmp.9;
+        bf %tmp.10 @_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_16_8_21_8_if_else_false;
+_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_16_8_21_8_if_true:
+_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_16_26_18_8_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc" 17 12 ]
+        %tmp.11 = 0;
+        symbol [ myValue ? 17 12 19 ];
+        putv self :myValue %tmp.11;
+_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_16_26_18_8_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_16_8_21_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_16_8_21_8_if_else_false:
+_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_19_13_21_8_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc" 20 12 ]
+        %tmp.12 = lgetv %store.1;
+        symbol [ store %tmp.12 20 22 27 ];
+        %tmp.13 = as %tmp.12 { (!Null) };
+        symbol [ toNumber %tmp.14 20 28 36 ];
+        %tmp.14 = getv function %tmp.13 :toNumber;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        symbol [ myValue ? 20 12 19 ];
+        putv self :myValue %tmp.15;
+_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_19_13_21_8_stop:
+_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_16_8_21_8_if_end:
+_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_11_33_23_4_stop:
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc"; @line = 25; @symbol_functiondef = [setMyValue,25,20,30]; @symbol_param<0> = [val,25,31,34]; @symbol_param<0>_type<0> = [Number,25,38,44]; ]
+    public
+    function setMyValue(val as Number) as Void {
+_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_25_54_27_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc" 26 8 ]
+        %tmp.1 = lgetv %val;
+        symbol [ val %tmp.1 26 18 21 ];
+        symbol [ myValue ? 26 8 15 ];
+        putv self :myValue %tmp.1;
+_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_25_54_27_4_stop:
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc"; @line = 29; @symbol_functiondef = [getMyValue,29,20,30]; @symbol_return<0> = [Number,29,36,42]; ]
+    public
+    function getMyValue() as Number {
+_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_29_43_31_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc" 30 8 ]
+        symbol [ myValue %tmp.2 30 15 22 ];
+        %tmp.2 = getv ? :myValue;
+        ret %tmp.2;
+_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_29_43_31_4_stop:
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc"; @line = 33; @symbol_functiondef = [onLayout,33,20,28]; @symbol_param<0> = [dc,33,29,31]; @symbol_param<0>_type<0> = [Dc,33,35,37]; ]
+    public
+    function onLayout(dc as Dc) as Void {
+_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_33_47_35_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc" 34 8 ]
+        %tmp.1 = self;
+        symbol [ setLayout %tmp.2 34 8 17 ];
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        symbol [ Rez %tmp.4 34 18 21 ];
+        %tmp.4 = getv ? :Rez;
+        symbol [ Layouts %tmp.5 34 22 29 ];
+        %tmp.5 = getv %tmp.4 :Layouts;
+        symbol [ NumberPicker %tmp.6 34 30 42 ];
+        %tmp.6 = getv function %tmp.5 :NumberPicker;
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 34 43 45 ];
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        invoke %tmp.1 %tmp.2(%tmp.8);
+_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_33_47_35_4_stop:
+    }
+    //! Update the view
+    //! @param dc Device context
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc"; @line = 39; @symbol_functiondef = [onUpdate,39,20,28]; @symbol_param<0> = [dc,39,29,31]; @symbol_param<0>_type<0> = [Dc,39,35,37]; ]
+    public
+    function onUpdate(dc as Dc) {
+_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_39_39_45_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc" 40 8 ]
+        [ "_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_39_39_45_4_start" "_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_39_39_45_4_stop" ]
+        %prompt.1 = local;
+        symbol [ prompt %prompt.1 40 12 18 ];
+        symbol [ View %tmp.2 40 21 25 ];
+        %tmp.2 = getv ? :View;
+        symbol [ findDrawableById %tmp.3 40 26 42 ];
+        %tmp.3 = getv function %tmp.2 :findDrawableById;
+        %tmp.4 = "myvalue";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        %tmp.6 = as %tmp.5 Text;
+        symbol [ Text %tmp.6 40 57 61 ];
+        lputv %prompt.1 %tmp.6;
+        symbol [ prompt %prompt.1 40 12 18 ];
+[ "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc" 42 8 ]
+        %tmp.7 = lgetv %prompt.1;
+        symbol [ prompt %tmp.7 42 8 14 ];
+        symbol [ setText %tmp.8 42 15 22 ];
+        %tmp.8 = getv function %tmp.7 :setText;
+        symbol [ Lang %tmp.9 42 23 27 ];
+        %tmp.9 = getm $.Toybox.Lang;
+        symbol [ format %tmp.10 42 28 34 ];
+        %tmp.10 = getv function %tmp.9 :format;
+        %tmp.11 = "$1$:$2$";
+        %tmp.12 = newa 2;
+        symbol [ myValue %tmp.14 42 48 55 ];
+        %tmp.14 = getv ? :myValue;
+        %tmp.15 = 60;
+        %tmp.16 = div %tmp.14 %tmp.15;
+        symbol [ format %tmp.17 42 60 66 ];
+        %tmp.17 = getv function %tmp.16 :format;
+        %tmp.18 = "%02d";
+        %tmp.19 = invoke %tmp.16 %tmp.17(%tmp.18);
+        %tmp.20 = dup %tmp.12;
+        %tmp.21 = aputv %tmp.20 0 %tmp.19;
+        symbol [ myValue %tmp.23 42 77 84 ];
+        %tmp.23 = getv ? :myValue;
+        %tmp.24 = 60;
+        %tmp.25 = mod %tmp.23 %tmp.24;
+        symbol [ format %tmp.26 42 89 95 ];
+        %tmp.26 = getv function %tmp.25 :format;
+        %tmp.27 = "%02d";
+        %tmp.28 = invoke %tmp.25 %tmp.26(%tmp.27);
+        %tmp.29 = dup %tmp.21;
+        %tmp.30 = aputv %tmp.29 1 %tmp.28;
+        %tmp.31 = invoke %tmp.9 %tmp.10(%tmp.11, %tmp.30);
+        invoke %tmp.7 %tmp.8(%tmp.31);
+[ "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc" 44 8 ]
+        symbol [ View %tmp.33 44 8 12 ];
+        %tmp.33 = getv ? :View;
+        symbol [ onUpdate %tmp.34 44 13 21 ];
+        %tmp.34 = getv function %tmp.33 :onUpdate;
+        %tmp.35 = lgetv %dc;
+        symbol [ dc %tmp.35 44 22 24 ];
+        invoke %tmp.33 %tmp.34(%tmp.35);
+_home_avl_data_src_garmin_intervals_intervals_myPauseLengthPickerView_mc_39_39_45_4_stop:
+    }
+}
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/myPauseLengthPickerView.mc"; @line = 1; ]
+<init> {
+}

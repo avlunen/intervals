@@ -1,0 +1,96 @@
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc"; @line = 4; @symbol_classdef = [SaveIntervalsDelegate,4,6,27]; @symbol_extends<0> = [WatchUi,4,36,43]; @symbol_extends<1> = [BehaviorDelegate,4,44,60]; ]
+class SaveIntervalsDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc"; @line = 5; @position = 16; @symbol_vardef = [_parentView,5,16,27]; @symbol_type<0> = [SaveIntervalsView,5,31,48]; ]
+    private
+    var _parentView as SaveIntervalsView;
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc"; @line = 8; @symbol_functiondef = [initialize,8,13,23]; @symbol_param<0> = [view,8,24,28]; @symbol_param<0>_type<0> = [SaveIntervalsView,8,32,49]; ]
+    function initialize(view as SaveIntervalsView) as Void {
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsSaveDelegate_mc_8_51_12_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc" 9 8 ]
+        symbol [ BehaviorDelegate %tmp.2 9 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 9 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc" 11 8 ]
+        %tmp.4 = lgetv %view;
+        symbol [ view %tmp.4 11 22 26 ];
+        symbol [ _parentView ? 11 8 19 ];
+        putv self :_parentView %tmp.4;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsSaveDelegate_mc_8_51_12_4_stop:
+    }
+    //! On a select event, start the intervals
+    //! @return true if handled, false otherwise
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc"; @line = 16; @symbol_functiondef = [onSelect,16,20,28]; @symbol_return<0> = [Boolean,16,34,41]; ]
+    public
+    function onSelect() as Boolean {
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsSaveDelegate_mc_16_42_20_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc" 17 8 ]
+        symbol [ _parentView %tmp.2 17 8 19 ];
+        %tmp.2 = getv ? :_parentView;
+        symbol [ getSession %tmp.3 17 20 30 ];
+        %tmp.3 = getv function %tmp.2 :getSession;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        symbol [ save %tmp.5 17 33 37 ];
+        %tmp.5 = getv function %tmp.4 :save;
+        invoke %tmp.4 %tmp.5();
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc" 18 8 ]
+        symbol [ WatchUi %tmp.6 18 8 15 ];
+        %tmp.6 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.7 18 16 23 ];
+        %tmp.7 = getv function %tmp.6 :popView;
+        symbol [ WatchUi %tmp.8 18 24 31 ];
+        %tmp.8 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_UP %tmp.9 18 32 40 ];
+        %tmp.9 = getv %tmp.8 :SLIDE_UP;
+        invoke %tmp.6 %tmp.7(%tmp.9);
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc" 19 8 ]
+        %tmp.10 = true;
+        ret %tmp.10;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsSaveDelegate_mc_16_42_20_4_stop:
+    }
+    //! Handle back behavior
+    //! @return true if handled, false otherwise
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc"; @line = 24; @symbol_functiondef = [onBack,24,20,26]; @symbol_return<0> = [Boolean,24,32,39]; ]
+    public
+    function onBack() as Boolean {
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsSaveDelegate_mc_24_40_28_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc" 25 8 ]
+        symbol [ _parentView %tmp.2 25 8 19 ];
+        %tmp.2 = getv ? :_parentView;
+        symbol [ getSession %tmp.3 25 20 30 ];
+        %tmp.3 = getv function %tmp.2 :getSession;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        symbol [ discard %tmp.5 25 33 40 ];
+        %tmp.5 = getv function %tmp.4 :discard;
+        invoke %tmp.4 %tmp.5();
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc" 26 8 ]
+        symbol [ WatchUi %tmp.6 26 8 15 ];
+        %tmp.6 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.7 26 16 23 ];
+        %tmp.7 = getv function %tmp.6 :popView;
+        symbol [ WatchUi %tmp.8 26 24 31 ];
+        %tmp.8 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_UP %tmp.9 26 32 40 ];
+        %tmp.9 = getv %tmp.8 :SLIDE_UP;
+        invoke %tmp.6 %tmp.7(%tmp.9);
+[ "/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc" 27 8 ]
+        %tmp.10 = true;
+        ret %tmp.10;
+_home_avl_data_src_garmin_intervals_intervals_source_intervalsSaveDelegate_mc_24_40_28_4_stop:
+    }
+}
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/source/intervalsSaveDelegate.mc"; @line = 1; ]
+<init> {
+}

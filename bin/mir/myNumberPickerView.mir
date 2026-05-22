@@ -1,0 +1,149 @@
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Graphics,3,14,22]; ]
+import Toybox.Graphics;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Application,4,14,25]; @symbol_importdef<2> = [Properties,4,26,36]; ]
+import Toybox.Application.Properties;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Application,5,14,25]; @symbol_importdef<2> = [Storage,5,26,33]; ]
+import Toybox.Application.Storage;
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc"; @line = 7; @symbol_classdef = [MyNumberPickerView,7,6,24]; @symbol_extends<0> = [WatchUi,7,33,40]; @symbol_extends<1> = [View,7,41,45]; ]
+class MyNumberPickerView extends WatchUi.View {
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc"; @line = 8; @position = 16; @symbol_vardef = [myValue,8,16,23]; @symbol_type<0> = [Number,8,27,33]; ]
+    private
+    var myValue as Number = 0;
+    //! Constructor
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc"; @line = 11; @symbol_functiondef = [initialize,11,20,30]; ]
+    public
+    function initialize() as Void {
+_home_avl_data_src_garmin_intervals_intervals_myNumberPickerView_mc_11_33_19_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc" 12 8 ]
+        symbol [ View %tmp.2 12 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 12 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc" 14 8 ]
+        symbol [ Storage %tmp.4 14 18 25 ];
+        %tmp.4 = getm $.Toybox.Application.Storage;
+        symbol [ getValue %tmp.5 14 26 34 ];
+        %tmp.5 = getv function %tmp.4 :getValue;
+        %tmp.6 = "intervals_no";
+        %tmp.7 = invoke %tmp.4 %tmp.5(%tmp.6);
+        symbol [ toNumber %tmp.8 14 51 59 ];
+        %tmp.8 = getv function %tmp.7 :toNumber;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        symbol [ myValue ? 14 8 15 ];
+        putv self :myValue %tmp.9;
+[ "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc" 15 8 ]
+_home_avl_data_src_garmin_intervals_intervals_myNumberPickerView_mc_15_8_17_8_if_stmt:
+        symbol [ myValue %tmp.11 15 11 18 ];
+        %tmp.11 = getv ? :myValue;
+        %tmp.12 = null;
+        %tmp.13 = eq %tmp.11 %tmp.12;
+        bf %tmp.13 @_home_avl_data_src_garmin_intervals_intervals_myNumberPickerView_mc_15_8_17_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_myNumberPickerView_mc_15_8_17_8_if_true:
+_home_avl_data_src_garmin_intervals_intervals_myNumberPickerView_mc_15_28_17_8_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc" 16 12 ]
+        %tmp.14 = 0;
+        symbol [ myValue ? 16 12 19 ];
+        putv self :myValue %tmp.14;
+_home_avl_data_src_garmin_intervals_intervals_myNumberPickerView_mc_15_28_17_8_stop:
+        goto @_home_avl_data_src_garmin_intervals_intervals_myNumberPickerView_mc_15_8_17_8_if_end;
+_home_avl_data_src_garmin_intervals_intervals_myNumberPickerView_mc_15_8_17_8_if_end:
+_home_avl_data_src_garmin_intervals_intervals_myNumberPickerView_mc_11_33_19_4_stop:
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc"; @line = 21; @symbol_functiondef = [setMyValue,21,20,30]; @symbol_param<0> = [val,21,31,34]; @symbol_param<0>_type<0> = [Number,21,38,44]; ]
+    public
+    function setMyValue(val as Number) as Void {
+_home_avl_data_src_garmin_intervals_intervals_myNumberPickerView_mc_21_54_23_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc" 22 8 ]
+        %tmp.1 = lgetv %val;
+        symbol [ val %tmp.1 22 18 21 ];
+        symbol [ myValue ? 22 8 15 ];
+        putv self :myValue %tmp.1;
+_home_avl_data_src_garmin_intervals_intervals_myNumberPickerView_mc_21_54_23_4_stop:
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc"; @line = 25; @symbol_functiondef = [getMyValue,25,20,30]; @symbol_return<0> = [Number,25,36,42]; ]
+    public
+    function getMyValue() as Number {
+_home_avl_data_src_garmin_intervals_intervals_myNumberPickerView_mc_25_43_27_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc" 26 8 ]
+        symbol [ myValue %tmp.2 26 15 22 ];
+        %tmp.2 = getv ? :myValue;
+        ret %tmp.2;
+_home_avl_data_src_garmin_intervals_intervals_myNumberPickerView_mc_25_43_27_4_stop:
+    }
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc"; @line = 29; @symbol_functiondef = [onLayout,29,20,28]; @symbol_param<0> = [dc,29,29,31]; @symbol_param<0>_type<0> = [Dc,29,35,37]; ]
+    public
+    function onLayout(dc as Dc) as Void {
+_home_avl_data_src_garmin_intervals_intervals_myNumberPickerView_mc_29_47_31_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc" 30 8 ]
+        %tmp.1 = self;
+        symbol [ setLayout %tmp.2 30 8 17 ];
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        symbol [ Rez %tmp.4 30 18 21 ];
+        %tmp.4 = getv ? :Rez;
+        symbol [ Layouts %tmp.5 30 22 29 ];
+        %tmp.5 = getv %tmp.4 :Layouts;
+        symbol [ NumberPicker %tmp.6 30 30 42 ];
+        %tmp.6 = getv function %tmp.5 :NumberPicker;
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 30 43 45 ];
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        invoke %tmp.1 %tmp.2(%tmp.8);
+_home_avl_data_src_garmin_intervals_intervals_myNumberPickerView_mc_29_47_31_4_stop:
+    }
+    //! Update the view
+    //! @param dc Device context
+    [ @file = "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc"; @line = 35; @symbol_functiondef = [onUpdate,35,20,28]; @symbol_param<0> = [dc,35,29,31]; @symbol_param<0>_type<0> = [Dc,35,35,37]; ]
+    public
+    function onUpdate(dc as Dc) {
+_home_avl_data_src_garmin_intervals_intervals_myNumberPickerView_mc_35_39_42_4_start:
+[ "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc" 36 8 ]
+        [ "_home_avl_data_src_garmin_intervals_intervals_myNumberPickerView_mc_35_39_42_4_start" "_home_avl_data_src_garmin_intervals_intervals_myNumberPickerView_mc_35_39_42_4_stop" ]
+        %prompt.1 = local;
+        symbol [ prompt %prompt.1 36 12 18 ];
+        symbol [ View %tmp.2 36 21 25 ];
+        %tmp.2 = getv ? :View;
+        symbol [ findDrawableById %tmp.3 36 26 42 ];
+        %tmp.3 = getv function %tmp.2 :findDrawableById;
+        %tmp.4 = "myvalue";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        %tmp.6 = as %tmp.5 Text;
+        symbol [ Text %tmp.6 36 57 61 ];
+        lputv %prompt.1 %tmp.6;
+        symbol [ prompt %prompt.1 36 12 18 ];
+[ "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc" 38 8 ]
+        %tmp.7 = lgetv %prompt.1;
+        symbol [ prompt %tmp.7 38 8 14 ];
+        symbol [ setText %tmp.8 38 15 22 ];
+        %tmp.8 = getv function %tmp.7 :setText;
+        symbol [ myValue %tmp.10 38 23 30 ];
+        %tmp.10 = getv ? :myValue;
+        symbol [ toString %tmp.11 38 31 39 ];
+        %tmp.11 = getv function %tmp.10 :toString;
+        %tmp.12 = invoke %tmp.10 %tmp.11();
+        invoke %tmp.7 %tmp.8(%tmp.12);
+[ "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc" 40 8 ]
+        symbol [ View %tmp.14 40 8 12 ];
+        %tmp.14 = getv ? :View;
+        symbol [ onUpdate %tmp.15 40 13 21 ];
+        %tmp.15 = getv function %tmp.14 :onUpdate;
+        %tmp.16 = lgetv %dc;
+        symbol [ dc %tmp.16 40 22 24 ];
+        invoke %tmp.14 %tmp.15(%tmp.16);
+_home_avl_data_src_garmin_intervals_intervals_myNumberPickerView_mc_35_39_42_4_stop:
+    }
+}
+[ @file = "/home/avl/data/src/garmin/intervals/intervals/myNumberPickerView.mc"; @line = 1; ]
+<init> {
+}
