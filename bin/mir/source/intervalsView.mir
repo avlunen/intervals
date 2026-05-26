@@ -24,7 +24,7 @@ class intervalsView extends WatchUi.View {
         %tmp.4 = getm $.Toybox.Attention;
         symbol [ VibeProfile %tmp.5 21 47 58 ];
         %tmp.5 = getv function ? %tmp.4 :VibeProfile;
-        %tmp.6 = 75;
+        %tmp.6 = 100;
         %tmp.7 = 2000;
         %tmp.2 = newc %tmp.5 (%tmp.6, %tmp.7);
         %tmp.8 = dup %tmp.1;
@@ -36,7 +36,7 @@ class intervalsView extends WatchUi.View {
         %tmp.13 = getm $.Toybox.Attention;
         symbol [ VibeProfile %tmp.14 22 49 60 ];
         %tmp.14 = getv function ? %tmp.13 :VibeProfile;
-        %tmp.15 = 50;
+        %tmp.15 = 100;
         %tmp.16 = 400;
         %tmp.11 = newc %tmp.14 (%tmp.15, %tmp.16);
         %tmp.17 = dup %tmp.10;
@@ -54,7 +54,7 @@ class intervalsView extends WatchUi.View {
         %tmp.29 = getm $.Toybox.Attention;
         symbol [ VibeProfile %tmp.30 24 50 61 ];
         %tmp.30 = getv function ? %tmp.29 :VibeProfile;
-        %tmp.31 = 50;
+        %tmp.31 = 100;
         %tmp.32 = 400;
         %tmp.27 = newc %tmp.30 (%tmp.31, %tmp.32);
         %tmp.33 = dup %tmp.26;

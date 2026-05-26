@@ -18,10 +18,10 @@ class intervalsView extends WatchUi.View {
     private var _int_length as Number = 30; // interval length in seconds
     private var _int_pause as Number = 15; // pause between intervals in seconds
     private var _intervals as Number = 5; // number of intervals
-    private var _vibeEndData = [ new Attention.VibeProfile(75, 2000) ]; // On for one second
-    private var _vibeStartData = [ new Attention.VibeProfile(50, 400), 
+    private var _vibeEndData = [ new Attention.VibeProfile(100, 2000) ]; // On for one second
+    private var _vibeStartData = [ new Attention.VibeProfile(100, 400), 
                                     new Attention.VibeProfile(0, 100),
-                                    new Attention.VibeProfile(50, 400) ]; // two shorter vibes
+                                    new Attention.VibeProfile(100, 400) ]; // two shorter vibes
     private var _isTimer1 as Boolean = true;
     private var _session as Session?;
 

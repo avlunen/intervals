@@ -2,7 +2,7 @@
     <string id="AppName">Interval Training</string>
 
     <string id="prompt">Push\n'Start'\nto start the\nintervals, or press\nthe menu button</string>
-    <string id="prompt_save">Push\n'Start'\nto save\nthe session, or press\nthe Back button</string>
+    <string id="prompt_save">Save?</string>
 
     <string id="menu_label_1">Active</string>
     <string id="menu_label_2">Pause</string>
